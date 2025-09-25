@@ -14,18 +14,19 @@ public class Notas {
     {
     System.out.print("Has suspendido");
     }
-    else if (nota>5 && nota<5.99)
+    else if (nota>=5 && nota<6)
     {
     System.out.print("Has aprovado");
     }
-    else if (nota>6 && nota<8.99)
+    else if (nota>=6 && nota<9)
     {
     System.out.print("Has aprovado con un notable");
     }
-    else if (nota>9 && nota<10)
+    else
     {
     System.out.print("Has aprovado con un Excelente, Felicidades!");
     }
     sc.close();
     }
 }
+
