@@ -10,11 +10,21 @@ public class nota {
         double nota;
         System.out.println("Introdcuce la nota: ");
         nota = sc.nextDouble();
+        int deberes;
+        System.out.println("Has entregado los deberes? No-> 0 / Sí -> 1 ");
+        deberes =sc.nextInt();
 
         if (nota>=0 && nota<=4.99)
         {
           System.out.println("Tienes un suspenso");  
+          if (deberes==1)
+          {
+            System.out.println("Tienes examen de repesca");
+          }
+          else if (deberes==0)
+          System.out.println("Vuelve el año que viene");
         }
+        
         else if (nota>=5 && nota<=5.99)
         {
             System.out.println("Tienes un aprobado");
