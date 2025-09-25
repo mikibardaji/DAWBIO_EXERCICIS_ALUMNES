@@ -6,11 +6,11 @@ public class condicional {
 
         double nota;
         nota = sc.nextInt();
-        if (nota >= 0 && nota < 4.99) {
+        if (nota >= 0 && nota <= 4.99) {
             System.out.println("deficiente mental");
-        } else if (nota >= 5 && nota < 6.99) {
+        } else if (nota >= 5 && nota <= 6.99) {
             System.out.println("suficiente");
-        }else if (nota >= 7 && nota < 8.99) {
+        }else if (nota >= 7 && nota <= 8.99) {
             System.out.println("notable");
         }else if (nota >= 9 && nota <= 10) {
             System.out.println("sobresaliente");
@@ -20,3 +20,4 @@ public class condicional {
         
     }
 }
+
