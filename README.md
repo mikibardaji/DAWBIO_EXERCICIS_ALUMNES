@@ -10,3 +10,5 @@ El nom del fitxer ha de ser CognomNomExxxx.java (el numero d'exercici). Si el ex
 ## Exemple 
 
 #### Si em dic Miquel Angel Bardaji  el meu fitxer s'ha d'anomenar =>  BardajiMiquelAngelEx1.java
+
+#### Podeu fer una subcarpeta dintre el dia amb el vostre CognomNom i pujar-los allí (quedarà més net)
