@@ -7,4 +7,6 @@ Si no us ha sortit, pero heu intentat també pugeu, encara que no compili.
 El nom del fitxer ha de ser CognomNomExxxx.java (el numero d'exercici). Si el exercici no tenia numeració, li fiqueu 1, 2, 3... succesivament.
 
 
-## Exemple jo soc Miquel Angel Bardaji  el meu fitxer s'ha d'anomenar BardajiMiquelAngelEx1.java
+## Exemple 
+
+#### Si em dic Miquel Angel Bardaji  el meu fitxer s'ha d'anomenar =>  BardajiMiquelAngelEx1.java
