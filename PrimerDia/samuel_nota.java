@@ -6,14 +6,14 @@ public class App {
         double nota;
         System.out.print("que nota tienes? ");
         nota =sc.nextDouble();
-        if (nota>=5.0) {
-            if (nota<=5||nota<5.99) {
+        if (nota>4.99) {
+            if (nota>=5&&nota<5.99) {
                 System.out.print("aprobado ");
             }
-            else if (nota<=6||nota<8.99) {
+            else if (nota>=6&&nota<8.99) {
                 System.out.print("notable ");
             }
-            else if(nota<=9||nota<=10) {
+            else if(nota>=9&&nota<=10) {
                 System.out.print("excelente ");
 
             }
@@ -26,3 +26,5 @@ public class App {
         }
     }
 }
+
+
