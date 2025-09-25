@@ -2,30 +2,27 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        
-        Double nota;
-        System.out.println("Hola, ingresa tu nota");
         Scanner sc = new Scanner(System.in);
+        double nota;
+        System.out.print("que nota tienes? ");
+        nota =sc.nextDouble();
+        if (nota>=5.0) {
+            if (nota<=5||nota<5.99) {
+                System.out.print("aprobado ");
+            }
+            else if (nota<=6||nota<8.99) {
+                System.out.print("notable ");
+            }
+            else if(nota<=9||nota<=10) {
+                System.out.print("excelente ");
 
-        nota = sc.nextDouble();
-        if (nota <=4.99) {
-            System.out.println("Suspendido");
-            
-        }else if (nota>=5 && nota<6) {
-            System.out.println("Aprobado");
-            
+            }
+            else{
+                System.out.print("nota no valida ");
+            }
         
-        }else if (nota >=6 && nota <8.99) {
-            System.out.println("Notable");
-            
-        }else if (nota ==9 && nota ==10) {
-            System.out.println("Excelente");
-            
         }else{
-            System.out.println("Ingresa una nota correcta");
+            System.out.print("a tu casita bb, suspendiste ");
         }
-            
-        
-
     }
 }
