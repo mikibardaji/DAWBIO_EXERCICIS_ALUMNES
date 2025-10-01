@@ -9,7 +9,7 @@ public class claudialeonej13 {
         double euros, moneda;
         System.out.print("Import en euros:");
         euros =sc.nextDouble();
-        System.out.println("Escull un moneda per a la conversió:");
+        System.out.println("Escull una moneda per a la conversió:");
         System.out.println("1. Dòlars Americans - USD ");
         System.out.println("2. Libra esterlina - GBP ");
         System.out.println("3. Dólar hongkonés - HKD ");
@@ -38,3 +38,4 @@ public class claudialeonej13 {
 
     }
 }
+
