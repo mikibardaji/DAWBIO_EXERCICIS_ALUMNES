@@ -44,10 +44,11 @@ public class Ex10_salario
         else
         {
             System.out.println("Salario bruto: " + euros + " euros");
-            euro_tasas= (900 - 500) * 0.25 + (euros - 900) * 0.45;
+            euro_tasas= 400 * 0.25 + (euros - 900) * 0.45;
             System.out.println("Tasas: " + euro_tasas);
             neto = euros-euro_tasas;
             System.out.println("Salario neto: " + neto + " euros");
         }    
     }
 }
+
