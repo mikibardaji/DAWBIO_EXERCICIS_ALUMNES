@@ -8,7 +8,7 @@ public class MartinaNicettoEx10 {
 
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
-         double salario, horas, tassas;
+         double salario, horas, horas_extra, tassas;
       
         System.out.println("Cuantas horas has trabajado? ");
          horas = sc.nextDouble();
@@ -25,7 +25,8 @@ public class MartinaNicettoEx10 {
         }
         else if (horas>130)
         {
-            salario=salario*15*1.5;
+            horas_extra=horas-130;
+            salario=horas_extra*15*1.5;
             System.out.println(salario);
         }         
         if(salario<500)
@@ -53,4 +54,5 @@ public class MartinaNicettoEx10 {
 
         }    
 }
+
 
