@@ -18,7 +18,7 @@ public class MartinaNicettoEx10 {
         
         double salarionet; 
 
-        if (horas>130)
+        if (horas<130)
         {
            salario= horas *15;
             System.out.println(salario);
@@ -53,3 +53,4 @@ public class MartinaNicettoEx10 {
 
         }    
 }
+
