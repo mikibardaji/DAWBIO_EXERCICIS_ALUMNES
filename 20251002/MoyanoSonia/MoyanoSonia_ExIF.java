@@ -26,17 +26,20 @@ if (glicemia<70){
     System.out.print("Compte!! Estàs amb el sucre baix, deuries menjar alguna cosa.");
 }
 
-if (glicemia>=70 && glicemia<=120){
+else if (glicemia>=70 && glicemia<=120){
 
     System.out.print("Bona feina estás dintre de rang.");
 }
 
 else if (glicemia>120 && glicemia<250){
-
-    System.out.print("Tens la glicemia Alta, deus aplicar "+ insulina+ " unitats d'insulina.");
+    if(insulina==0){
+        System.out.print("Tens la glicemia Alta, pero no cal corregir, revisa passats uns minuts.");}
+    else{
+        System.out.print("Tens la glicemia Alta, deus aplicar "+ insulina+ " unitats d'insulina.");
+    }
 }
 
-else if (glicemia>=250){
+else {
 
     System.out.print("Estas en perill de cetoacidòsi aplica "+insulina+" unitats de insulina i revisa passat 15 minuts." );
 }
