@@ -1,5 +1,5 @@
 ﻿Creo que he sacado sobre 6 un  0.5/6. Siendo positiva
-Porque en el primero no me acorde de poner el charAt(0);
-y en el segundo para las contradicciones no sabia hacer lo de n o s.
+Porque en el primero no me acorde de poner el charAt(0); y por eso no me iba y al final cambie muchas cosas y estaran mal.
+En el segundo para las contradicciones no sabia hacer lo de n o s.
 Ademas que cuando se abria la terminal y ponias los datos salia el sout del error no el del resultado.
 
