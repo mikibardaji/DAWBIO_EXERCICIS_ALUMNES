@@ -1,0 +1,5 @@
+NOTA AUTOAVALUACIÓ:
+Irsis Sosa Sánchez
+5/6
+He repetido varias veces varias cosas del código del ejercicio 2, tenía que haber separado de mejor forma los if y los else if para que se entienda
+mejor el código.
