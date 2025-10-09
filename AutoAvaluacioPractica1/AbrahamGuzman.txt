@@ -1,0 +1,2 @@
+Creo que tengo un 4.5 porque tengo el error de que no utilice el char ya que me sabia el metodo AtChar(0) pero no recordaba
+los char tenian que ser con comillas simples ''
