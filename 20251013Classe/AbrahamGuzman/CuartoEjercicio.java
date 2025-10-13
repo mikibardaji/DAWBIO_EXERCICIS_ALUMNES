@@ -19,19 +19,19 @@ public class CuartoEjercicio {
         // TODO code application logic here
        Scanner sc = new Scanner(System.in); 
         int N; 
-        int cont = 1; 
+        int cont = 2; 
         System.out.println("Ingrese un numero ");
         
         N = sc.nextInt();
         
+          System.out.println("Todos los numeros pares de " + N +" Sumados de  1 en 1 : ");
         
-        
-        System.out.println("Numeros entre 1 y "+ N + " :");
-        
-        while(cont<=N){
-            System.out.println(cont);
-            cont++; 
+        for (cont = 2; cont <=N ; cont++) {
+            if (cont%2 ==0 ) {
+              System.out.println(cont);
+            }
         }
     }
     
 }
+
