@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio_4_Eduardo_Rodriguez {
+public class Ejercicio_5_Eduardo_Rodriguez {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int tiempo = 10;
@@ -15,3 +15,4 @@ public class Ejercicio_4_Eduardo_Rodriguez {
         
     }
 }
+
