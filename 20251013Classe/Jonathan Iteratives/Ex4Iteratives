@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Ex4Iteratives {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Introdueix un número natural: ");
+        int N = entrada.nextInt();
+
+        int contador = 1;
+
+       
+        while (contador <= N) {
+            if (contador % 2 == 0) {
+                System.out.println(contador);
+            }
+            contador++; 
+        }
+
+    }
+}
