@@ -9,7 +9,7 @@ public static void main(String[] args) throws Exception {
 
     int contador = 0; // comptador de valors crítics (negatius)
     double valors = 0.0;
-    double v_arterial=0.0;
+    double v_arterial=0;
 
     // Llegir exactament 10 valors i comptar quants són negatius
     for (v_arterial = 0; v_arterial < 10; v_arterial++) {
