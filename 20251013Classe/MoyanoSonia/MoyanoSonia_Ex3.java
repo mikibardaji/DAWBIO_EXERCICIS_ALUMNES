@@ -13,7 +13,7 @@ public class Nparells {
 
     System.out.println("Els números parells entre 1 i "+num+" son:");
 
-    for  (int i=0; i<=num; i=i+2){
+    for  (int i=1; i<=num; i=i+2){
     
         System.out.print(i+" " );
     }
