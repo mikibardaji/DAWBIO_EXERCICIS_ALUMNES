@@ -17,19 +17,20 @@ public class TercerEjercicio {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner sc = new Scanner(System.in); 
+         Scanner sc = new Scanner(System.in); 
         int N; 
         int cont = 2; 
         System.out.println("Ingrese un numero ");
         
         N = sc.nextInt();
         
+        System.out.println("Todos los numeros pares de " + N +" Sumados de  2 en 2: ");
         
-        for (cont = 2; cont <=N ; cont++) {
-            if (cont%2 ==0 ) {
-                System.out.println("Todos los numeros pares de " + N +" Sumados de  2 en 2: ");
+        for (cont = 2; cont <=N ; cont+=2) {
+            
+                
                 System.out.println(cont);
-            }
+            
         }
         
       
@@ -39,3 +40,4 @@ public class TercerEjercicio {
     }
     
 }
+
