@@ -9,6 +9,7 @@ public class Ejercicio_6_Eduardo_Rodriguez {
             System.out.println("Dime un Valor de presion arterial: ");
             valor = sc.nextInt();
             if (valor < 0) {
+                System.out.println("Se ha detectado un error critico");
                 critic++;
             }
         }
@@ -22,3 +23,4 @@ public class Ejercicio_6_Eduardo_Rodriguez {
         
     }
 }
+
