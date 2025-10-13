@@ -9,7 +9,7 @@ public class Ejercicio_2_Eduardo_Rodriguez_while {
         dosis= sc.nextInt();
 
 
-        while (dosis!=1);{
+        while (dosis>1);{
             
         System.out.println("te administramos una dosis, estas son las que te faltan: "+ (dosis-1));
         dosis = dosis - 1;
@@ -18,4 +18,5 @@ public class Ejercicio_2_Eduardo_Rodriguez_while {
         
     }
 }
+
 
