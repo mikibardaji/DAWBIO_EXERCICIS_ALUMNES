@@ -13,9 +13,10 @@ public class ex9 {
             suma += pulsaciones;
         }
         
-        double media = suma / 5;
+        double media = suma / (i-1);
         System.out.println("Media = " + media + " bpm");
         
  }
     }
+
 
