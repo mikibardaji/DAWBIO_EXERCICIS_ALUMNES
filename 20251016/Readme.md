@@ -10,20 +10,20 @@
    
    Execucio:
    
-   El ordinador pensa el 78 (es el numero aleatori que li ha sortit entre 1 i 100)
+   * El ordinador pensa el 78 (es el numero aleatori que li ha sortit entre 1 i 100)
    
-   He encertat? **-** (el usuari li diu mes petit)
+   - He encertat? **-** (el usuari li diu mes petit)
    
-   El ordinador pensa 37 (es el numero aleatori que li ha sortit entre 1 i 77)
+   * El ordinador pensa 37 (es el numero aleatori que li ha sortit entre 1 i 77)
    
-   He encertat? **+** (el usuari li indica mes gran)
+   - He encertat? **+** (el usuari li indica mes gran)
    
-   El ordinador pensa 47 (es el numero aleatori que li ha sortit entre 38 i 77)
+   * El ordinador pensa 47 (es el numero aleatori que li ha sortit entre 38 i 77)
    
-   He encertat? **+** (el usuari li indica mes gran)
+   - He encertat? **+** (el usuari li indica mes gran)
    
    El ordinador pensa 52 (es el numero aleatori que li surt entre 48 i 77) 
    
    He encertat? **=** (ha encertat s'acaba el joc)
    
-   *T'ho he encertat amb 3 cops, dos cops he dit un numero més gran i un cop mes petit*
+   *T'ho he encertat amb 3 cops, 2 cops he dit un numero més gran i 1 cop mes petit*
