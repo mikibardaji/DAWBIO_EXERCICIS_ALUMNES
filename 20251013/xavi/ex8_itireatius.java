@@ -1,5 +1,5 @@
 
-public class ejiteratius8 {
+public class ex8_itireatius {
     public static void main(String[] args) {
         char aminoacid='A';
         for (int i=0; i<20;i++){
@@ -17,3 +17,4 @@ public class ejiteratius8 {
     
 }
 }
+
