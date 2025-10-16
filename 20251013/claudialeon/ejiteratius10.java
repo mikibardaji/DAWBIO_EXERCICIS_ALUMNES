@@ -7,10 +7,11 @@ public class ejiteratius10 {
      int contador=0;
 
      do{
-         temperatura = 35 + rd.nextFloat() * 10; 
+         temperatura = 35 + rd.nextDouble() * 10; 
          contador ++;
          System.out.println("Introdueix temperatura del pacient: " + temperatura);
      }while (temperatura<36.5);
      System.out.println("Han calgut " + contador + "intents.");
 }
 }
+
