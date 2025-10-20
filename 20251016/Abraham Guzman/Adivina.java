@@ -21,7 +21,7 @@ public class Adivina {
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);
        
-        int max = 100, min = 1;
+        int max = 101, min = 1;
         int maquina;
         char usuario;
         boolean acerto = false;
@@ -32,7 +32,7 @@ public class Adivina {
         do {
             System.out.println("Rango actual: " + min + " - " + max);
 
-            maquina = rd.nextInt(min, max + 1);
+            maquina = rd.nextInt(min, max );
           
             System.out.println("¿Tu numero es " + maquina + "? (S/N)");
             usuario = sc.next().charAt(0); 
@@ -50,7 +50,7 @@ public class Adivina {
                     conmas++;
                     intentos--;
                 } else if (usuario == '-') {
-                    max = maquina - 1;
+                    max = maquina;
                     conmenos++;
                     intentos--;
                 } else {
@@ -80,6 +80,7 @@ public class Adivina {
     }
     
 }
+
 
 
 
