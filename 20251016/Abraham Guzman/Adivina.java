@@ -30,7 +30,7 @@ public class Adivina {
         System.out.println("Cuantos intentos me quieres dar 😊");
         intentos = sc.nextInt();
         do {
-            System.out.println("\nRango actual: " + min + " - " + max);
+            System.out.println("Rango actual: " + min + " - " + max);
 
             maquina = rd.nextInt(min, max + 1);
           
@@ -80,4 +80,5 @@ public class Adivina {
     }
     
 }
+
 
