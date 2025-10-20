@@ -1,0 +1,39 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class NumAleatori {
+    public static void main(String[] args) {
+        Random random = new Random();
+        Scanner sc = new Scanner(System.in);
+
+        int numeroAleatorio = random.nextInt(1, 101); 
+        char respuesta;
+
+        System.out.println("¡He pensat en un número entre 1 i 100!");
+        System.out.println("(Pista: el número és " + numeroAleatorio + ")"); 
+
+        do {
+            System.out.print("Introdueix el teu signe ('=', '+', '-') per respondre: ");
+            respuesta = sc.next().charAt(0);
+
+            switch (respuesta) {
+                case '=':
+                    System.out.println("¡He acertado!");
+                    break;
+                case '+':
+                    System.out.println("El número és més gran que el teu.");
+                    break;
+                case '-':
+                    System.out.println("El número és més petit que el teu.");
+                    break;
+                default:
+                    System.out.println("Signe no reconegut. Intenta-ho de nou.");
+                    break;
+            }
+
+        } while (respuesta != '=');
+
+        System.out.println("Fi del joc.");
+        
+    }
+}
