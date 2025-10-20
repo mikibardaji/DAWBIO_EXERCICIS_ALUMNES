@@ -51,7 +51,7 @@ public class BlascoJoelEx14ite {
                             break;
                         
                         case '-':
-                            max = nummaquina - 1;
+                            max = nummaquina;
                             if(min > max){
                                 System.out.println("Estas fent trampes :/");
                             }
@@ -79,3 +79,4 @@ public class BlascoJoelEx14ite {
 
     }
 }
+
