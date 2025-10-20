@@ -27,7 +27,6 @@ public class Adivina {
         boolean acerto = false;
         int intentos,conmas = 0, conmenos = 0;
         System.out.println("Piensa en un numero entre 1 y 100, y lo intentare adivinar 😎");
-        maquina = sc.nextInt();
         System.out.println("Cuantos intentos me quieres dar 😊");
         intentos = sc.nextInt();
         do {
@@ -81,6 +80,7 @@ public class Adivina {
     }
     
 }
+
 
 
 
