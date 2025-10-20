@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author xabiel
+ * 
  */
 public class Adivina {
 
@@ -26,7 +26,7 @@ public class Adivina {
         char usuario;
         boolean acerto = false;
         int intentos,conmas = 0, conmenos = 0;
-        System.out.println("Piensa en un número entre 1 y 100, y lo intentaré adivinar 😎");
+        System.out.println("Piensa en un numero entre 1 y 100, y lo intentare adivinar 😎");
         System.out.println("Cuantos intentos me quieres dar 😊");
         intentos = sc.nextInt();
         do {
@@ -34,15 +34,15 @@ public class Adivina {
 
             maquina = rd.nextInt(min, max + 1);
           
-            System.out.println("¿Tu número es " + maquina + "? (S/N)");
+            System.out.println("¿Tu numero es " + maquina + "? (S/N)");
             usuario = sc.next().charAt(0); 
                 
             
             if (usuario == 's' || usuario == 'S') {
-                System.out.println("¡Lo adiviné! 😁");
+                System.out.println("Lo adivine 😁");
                 acerto = true;
             } else if (usuario == 'n' || usuario == 'N') {
-                System.out.println("¿Tu número es mayor (+) o menor (-)?");
+                System.out.println("¿Tu numero es mayor (+) o menor (-)?");
                 usuario = sc.next().charAt(0);
 
                 if (usuario == '+') {
@@ -54,16 +54,16 @@ public class Adivina {
                     conmenos++;
                     intentos--;
                 } else {
-                    System.out.println("Opción no válida 😐");
+                    System.out.println("Opcion no valida 😐");
                 }
 
-                // Detección de trampas
+                
                 if ((min > max) || (min == max && (usuario == '+' || usuario == '-'))) {
-                    System.out.println("¡Estás haciendo trampas! 😡");
-                    acerto = true; // termina el juego
+                    System.out.println("¡Estas haciendo trampas! 😡");
+                    acerto = true; 
                 }
             } else {
-                System.out.println("Respuesta no válida, usa S o N.");
+                System.out.println("Respuesta no valida, usa S o N.");
             }
             
             
@@ -76,9 +76,10 @@ public class Adivina {
                  }else{
                  System.out.println("Me has ganado 😭");
                  
-    }System.out.println("He hecho " + (conmas + conmenos) + " intentos, he dicho " + conmas + " veces un número más pequeño y " + conmenos + " veces un número más grande.");
+    }System.out.println("He hecho " + (conmas + conmenos) + " intentos, he dicho " + conmas + " veces un numero mas pequeño y " + conmenos + " veces un numero mas grande.");
     }
     
 }
+
 
 
