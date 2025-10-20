@@ -12,11 +12,11 @@ public class Ejercicio_14_Eduardo_Rodriguez {
             ale = (int)(Math.random() * (Max - Min + 1)) + Min; 
             if (ale > pedir) {
                 System.out.println("\nEste es el numero que puso la maquina: " + ale + " El numero en menor");
-                Max = ale + 1;
+                Max = ale - 1;
             }
             else if (ale < pedir) {
                 System.out.println("\nEste es el numero que puso la maquina: " + ale + " El numero en mayor");
-                Min = ale - 1;
+                Min = ale + 1;
             }
             contador++;
         } while (pedir != ale);
@@ -24,3 +24,4 @@ public class Ejercicio_14_Eduardo_Rodriguez {
         System.out.println("Numero de intentos: " + contador);
     }
 }
+
