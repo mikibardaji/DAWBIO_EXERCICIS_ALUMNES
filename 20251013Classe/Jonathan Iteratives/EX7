@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Ex7Iteratives {
+    public static void main(String[] args) {
+        double tensio;
+        int contador = 1;
+        Scanner sc = new Scanner(System.in);
+
+        do {
+            System.out.println("Posa la tensió:");
+            tensio = sc.nextDouble();
+            contador++;
+        } while (contador <= 5);
+
+        
+    }
+}
