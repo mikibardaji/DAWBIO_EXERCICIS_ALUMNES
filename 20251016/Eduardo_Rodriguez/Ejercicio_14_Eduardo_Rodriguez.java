@@ -5,7 +5,7 @@ public class Ejercicio_14_Eduardo_Rodriguez {
         Scanner sc = new Scanner(System.in);
         int Max = 100, Min = 1, pedir, ale, contador = 0;
 
-        System.out.println("Introduce el numero que quieres que la maquina adivine: ");
+        System.out.println("Introduce el numero del 1 al 100 que quieres que la maquina adivine: ");
         pedir = sc.nextInt();
 
         do {
@@ -24,4 +24,5 @@ public class Ejercicio_14_Eduardo_Rodriguez {
         System.out.println("Numero de intentos: " + contador);
     }
 }
+
 
