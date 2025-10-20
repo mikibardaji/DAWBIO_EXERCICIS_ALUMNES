@@ -33,9 +33,11 @@ public class Adivina {
             System.out.println("\nRango actual: " + min + " - " + max);
 
             maquina = rd.nextInt(min, max + 1);
+          
             System.out.println("¿Tu número es " + maquina + "? (S/N)");
-            usuario = sc.next().charAt(0);
-
+            usuario = sc.next().charAt(0); 
+                
+            
             if (usuario == 's' || usuario == 'S') {
                 System.out.println("¡Lo adiviné! 😁");
                 acerto = true;
@@ -46,9 +48,11 @@ public class Adivina {
                 if (usuario == '+') {
                     min = maquina + 1;
                     conmas++;
+                    intentos--;
                 } else if (usuario == '-') {
                     max = maquina - 1;
                     conmenos++;
+                    intentos--;
                 } else {
                     System.out.println("Opción no válida 😐");
                 }
@@ -63,10 +67,17 @@ public class Adivina {
             }
             
             
-            intentos--;
+            
              System.out.println("Me quedan "+ intentos);
         } while (!acerto && intentos!=0);
-                 System.out.println("He hecho " + (conmas + conmenos) + " intentos, he dicho " + conmas + " veces un número más pequeño y " + conmenos + " veces un número más grande.");
+                 if(acerto == true){
+                          System.out.println("Te he ganado 😎");
+                    
+                 }else{
+                 System.out.println("Me has ganado 😭");
+                 
+    }System.out.println("He hecho " + (conmas + conmenos) + " intentos, he dicho " + conmas + " veces un número más pequeño y " + conmenos + " veces un número más grande.");
     }
     
 }
+
