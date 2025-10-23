@@ -27,7 +27,7 @@ public class ProducteReal {
     //mostrem el resultat
     System.out.println("El producte de "+ x1 +" i "+ y1+ " és :" + producte(x1, y1));
 
-
+    sc.close();
 
 
     }//final del main
