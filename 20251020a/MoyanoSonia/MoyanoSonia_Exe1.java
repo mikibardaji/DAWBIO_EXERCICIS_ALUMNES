@@ -11,24 +11,32 @@ public class ProducteReal {
     double x1, y1;
     Scanner sc = new Scanner(System.in);    
 
-    //demanem la primera variable
+    //demanem la x
     
     System.out.println("Indica x: ");
     x1=sc.nextDouble();
+
+    //demanem la y
+
     System.out.println("Indica y: ");
     y1=sc.nextDouble();
+    
+    //cridem a la funció producte
     producte(x1,y1);
 
-     System.out.println("El producte de "+ x1 +" i "+ y1+ " és :" + producte(x1, y1));
+    //mostrem el resultat
+    System.out.println("El producte de "+ x1 +" i "+ y1+ " és :" + producte(x1, y1));
 
 
 
 
     }//final del main
 
+
+    //fem una funció on haurem de multiplicar x i y
     private static double producte(double x, double y){
 
-    return x*y;
+    return x*y; //retorna el producte dels dos valors.
     
     }
 }
