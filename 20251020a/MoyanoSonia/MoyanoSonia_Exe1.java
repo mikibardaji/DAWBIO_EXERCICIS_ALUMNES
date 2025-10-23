@@ -8,24 +8,24 @@ public class ProducteReal {
     //Cal implementar el mètode double producte(double x, double y), el qual retorna el producte dels arguments passats com a paràmetres.
     
     //inicialitzem variables i scanner
-    double x1, y1;
+    double x, y;
     Scanner sc = new Scanner(System.in);    
 
     //demanem la x
     
     System.out.println("Indica x: ");
-    x1=sc.nextDouble();
+    x=sc.nextDouble();
 
     //demanem la y
 
     System.out.println("Indica y: ");
-    y1=sc.nextDouble();
+    y=sc.nextDouble();
     
     //cridem a la funció producte
-    producte(x1,y1);
+    producte(x,y);
 
     //mostrem el resultat
-    System.out.println("El producte de "+ x1 +" i "+ y1+ " és :" + producte(x1, y1));
+    System.out.println("El producte de "+ x +" i "+ y+ " és :" + producte(x, y));
 
     sc.close();
 
