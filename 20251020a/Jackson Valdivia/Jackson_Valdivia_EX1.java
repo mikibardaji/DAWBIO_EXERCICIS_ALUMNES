@@ -10,11 +10,12 @@ public class reals{
         double dos = sc.nextDouble();
         
         double respuesta = producte(uno, dos);
-        System.out.println("el producto es: "+respuesta);
+        System.out.println("el producto es: " + respuesta);
     }
 
     public static double producte(double x, double y){
         double producto;
-        producto = x % y;
+        producto = x * y;
         return producto;}
+
 }
