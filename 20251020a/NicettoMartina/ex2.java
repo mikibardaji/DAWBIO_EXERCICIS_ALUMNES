@@ -6,21 +6,40 @@ public class ex2 {
 
     public static void main(String[] args) {
        
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Dime tu edad: ");
-        int edad = sc.nextInt();
+      int edad;
 
-        
-        if (mayor(edad)) {
-            System.out.println("Eres mayor de edad");
-        } else {
-            System.out.println("Eres menor de edad");
-        }
+      edad=pedirNumeroEnteroPos();
+
+      boolean mayor=mayored(edad);
+      mostrar(edad);
     }
 
+ public static void mostrar(int edad){
+   System.out.println("Muestra la edad "+edad);
 
-    private static boolean mayor(int edad) 
+ }
+    public static boolean mayored(int edad) 
     {
-        return edad >= 18;
+        boolean mayor = true;  
+        if (edad>=18) {
+            System.out.println("Eres mayor de edad");
+            return mayor = true;
+        } else {
+            System.out.println("Eres menor de edad");
+            return mayor = false;
+        }
+        
+    }
+
+    public static int pedirNumeroEnteroPos()
+    {
+        int valor;
+         Scanner sc=new Scanner(System.in);
+         do{
+            System.out.println("Pon tu edad: ");
+            valor=sc.nextInt();
+         }while(valor<0);
+         return valor;
+
     }
 }
