@@ -7,7 +7,7 @@ public class Eduardo_Rodriguez_ex_2 {
         System.out.print("Coloca tu edad: ");
         int edad = sc.nextInt();
 
-        if (mayor(edad)) {
+        if (mayor(edad) == true) {
             System.out.println("eres mayor de edad");
         } else {
             System.out.println("no eres mayor de edad");
@@ -18,4 +18,5 @@ public class Eduardo_Rodriguez_ex_2 {
     private static boolean mayor(int edad) {
         return edad >= 18;
     }
+
 }
