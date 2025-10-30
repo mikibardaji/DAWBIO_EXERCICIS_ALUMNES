@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package javaapplication3;
+package diseñomodular;
 
 import java.util.Scanner;
 
@@ -16,26 +12,16 @@ public class Ex4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingresa un numero y te dire si es positivo, negativo o zero");
-        int usuario = sc.nextInt();
-        
+          // TODO code application logic here
+       
+        int usuario = pedirValor();
         int detector = obteSigne(usuario);
-        
-        switch (detector) {
-            case 1:
-                System.out.println("Es positivo " + usuario);
-                break;
-            case 0: 
-                System.out.println("Su numero es 0");
-                break;
-            case -1: 
-                System.out.println("Es negativo " + usuario);
-                break;
-            default:
-                System.out.println("Opcion no valida");;
-        }
+        detector(detector, usuario);
+    }
+    public static int pedirValor(){
+     Scanner sc = new Scanner(System.in);
+      System.out.println("Ingresa un numero y te dire si es positivo, negativo o zero");
+      return sc.nextInt();
     }
     public static int obteSigne(int x){
        int nose = 0;
@@ -48,4 +34,20 @@ public class Ex4 {
         }
         return nose;
     }
-}
+       public static void detector(int detector, int usuario){
+         switch (detector) {
+            case 1:
+                System.out.println("Es positivo " + usuario);
+                break;
+            case 0: 
+                System.out.println("Su numero es 0");
+                break;
+            case -1: 
+                System.out.println("Es negativo " + usuario);
+                break;
+            default:
+                System.out.println("Opcion no valida");;
+        }
+       }    
+    }
+    
