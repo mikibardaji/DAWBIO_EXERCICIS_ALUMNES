@@ -9,10 +9,10 @@ public class ex1 {
         Scanner sc = new Scanner(System.in);
         
         
-        System.out.print("Intoduce el primer numero real: ");
+        System.out.print("Introduce el primer numero real: ");
         double num1 = sc.nextDouble();
         
-        System.out.print("Intoduce el segun numero real:");
+        System.out.print("Introduce el segun numero real:");
         double num2 = sc.nextDouble();
         
         
@@ -23,4 +23,5 @@ public class ex1 {
 
         
     }
+
 }
