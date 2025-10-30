@@ -17,16 +17,28 @@ public class Ex5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese una cantidad de millas");
+                 // TODO code application logic here
+       
         
-        double kilometros = millesAkm(sc.nextInt());
+        double kilometros = millesAkm(Pedir());
+        mostrar(kilometros);
         
-        System.out.println("Esta es su velocidad en kilometros " + Math.round(kilometros) +"Km");
     }
     public static double millesAkm(int milles){
     double kilometro;
     kilometro = milles * 1.6093;
     return kilometro;
     }
+    public static int Pedir(){
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese una cantidad de millas");
+        
+        return  sc.nextInt();
+    }
+    
+   public static void mostrar(double kilometors){
+   System.out.println("Esta es su velocidad en kilometros " + Math.round(kilometors) +" Km");
+           }
 }
+
