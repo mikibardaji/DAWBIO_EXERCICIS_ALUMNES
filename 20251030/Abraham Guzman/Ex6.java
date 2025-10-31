@@ -17,8 +17,8 @@ public class Ex6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-             int x =numero(1) ;
-             int y = numero(2);
+             int x =numero() ;
+             int y = numero();
         
         int compara = compara(x, y);
         
@@ -26,7 +26,7 @@ public class Ex6 {
  
         
     }
-    public static int numero(int x){
+    public static int numero(){
           Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un numero");
         return  sc.nextInt();
@@ -55,3 +55,4 @@ public class Ex6 {
         }
     }
 }
+
