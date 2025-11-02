@@ -32,7 +32,7 @@ public static void main(String[] args)  {
             System.out.println("El valor indicat es erroni, indica un preu vàlid: ");
             preu=sc.nextFloat();
         }
-
+        System.out.println("Amb l'IVA el preu és: "+preu*IVA);
         return preu*IVA;
     }
     public static boolean terminarCompra(){
