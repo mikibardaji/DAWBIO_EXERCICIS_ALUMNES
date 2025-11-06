@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class ex6 {
+    public static void main(String[] args) {
+   //Programa que demana a l’usuari dos números enters i diu si són iguals o quin és el valor del més gran. Prototip int compara(int x, int y) que retorna -1, 0, +1 segons que x sigui més petit, igual o major que y.
+    int valor1, valor2, signe; 
+    valor1 = valores(1);
+    valor2 = valores (2);
+    signe = compara(valor1, valor2);
+    resultat(signe, valor1, valor2);
+}
+
+private static int valores(int x) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Dona'm un valor " + x + ": ");
+    int valores = sc.nextInt();
+    return valores;
+}
+
+private static int compara(int x, int y) {
+    if (x > y) 
+    {
+        return 1;
+    } 
+    else if (x < y) 
+    {
+        return -1;
+    } else 
+    {
+        return 0;
+    }
+}
+private static void resultat(int Valor, int x, int y) {
+
+    if (Valor == -1) 
+    {
+        System.out.println("El nombre " + x + " és més petit que " + y + ".");
+    } 
+    else if (Valor == 1) 
+    {
+        System.out.println("El nombre " + x + " és més gran que " + y + ".");
+    } 
+    else 
+    {
+        System.out.println("Els nombres són iguals.");
+    }
+}
+}
