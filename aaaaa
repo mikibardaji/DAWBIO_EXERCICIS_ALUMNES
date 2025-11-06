@@ -1,0 +1,15 @@
+public static int ganador(int choose_player1, int choose_player2){
+        int gana;
+        if (choose_player1 == choose_player2) {
+            gana =0;
+        }else if(choose_player1 == 1 && choose_player2 == 0){
+            gana=1;
+        }else if(choose_player1 == 0 && choose_player2 == 2){
+            gana=1;
+        }else if(choose_player1 == 2 && choose_player2 == 1){
+            gana=1;
+        }else{
+            gana=2;
+        }
+        return gana;
+    }
