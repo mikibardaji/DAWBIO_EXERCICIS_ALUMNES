@@ -59,6 +59,16 @@ public class juego {
         System.out.println("--------------------------------");
     }
 
+
+    //continuar juego
+    public static boolean continuar(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("¿Quieres jugar otra ronda? (s/n)");
+        String respuesta = sc.next().toLowerCase();
+        return respuesta.equals("s");
+    }
+
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -81,10 +91,9 @@ public class juego {
 
             marcador(puntosJ1, puntosJ2);
 
-            System.out.println("¿Quieres jugar otra ronda? (s/n)");
-            seguir = sc.next().toLowerCase();
+            continuar();
 
-        } while (seguir.equals("s"));
+        } while (continuar());
 
         System.out.println("Juego terminado.");
     }
