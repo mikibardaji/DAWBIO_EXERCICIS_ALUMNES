@@ -114,17 +114,22 @@ public class Juego {
     }
 //made ricardo
     public static int ganador(int usuario, int maquina) {
+      public static int ganador(int usuario, int maquina) {
       int ganador = 0;
-      if((usuario == 0 && maquina == 2) || (usuario == 2 && maquina == 1) || (usuario == 2 && maquina == 0))
+      if((usuario == 0 && maquina == 2)|| 
+         (usuario == 1 && maquina == 0) || 
+         (usuario == 2 && maquina == 1))
       { ganador = 1; }
       else if (usuario == maquina){
-      ganador;
+      
       } 
       else { ganador = 2; }
     return ganador;
+    
     }   
 
 }
+
 
 
 
