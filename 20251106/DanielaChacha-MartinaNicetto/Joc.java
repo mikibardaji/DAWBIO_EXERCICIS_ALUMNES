@@ -24,13 +24,21 @@ public class Joc
     public static void imp_jugada(String quien_juega, int choose)
     {
         String jugada = "";
-        if (choose == 0) jugada = "Piedra";
-        else if (choose == 1) jugada = "Papel";
-        else if (choose == 2) jugada = "Tijera";
+        if (choose == 0) 
+        {
+            jugada = "Piedra";
+        }
+        else if (choose == 1) 
+        {
+            jugada = "Papel";
+        }
+        else if (choose == 2) 
+        {
+            jugada = "Tijera";
+        }
 
         System.out.println(quien_juega + " ha sacado: " + jugada);
     }
-
     public static void imp_ganador(int ganador)
     {
         if (ganador==0)
@@ -85,3 +93,4 @@ public class Joc
     }
 
 }
+
