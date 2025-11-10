@@ -1,0 +1,101 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class ruleta {
+
+    
+    
+    public static void main(String[] args)  {
+   
+    } //final del main
+
+
+
+    public static int afegirPunts(int saldo){
+        Scanner sc = new Scanner(System.in);
+        int num;
+        do{
+        System.out.println("Quin saldo vols afegir als teus punts?");
+        num = sc.nextInt();
+        }while(num<0);      
+        return saldo+num;
+    }
+
+    public static int bola(){
+        int num_bola;
+        Random rd = new Random();
+        //indiquem que ha de ser un valor entre 0 i 36 inclosos
+        num_bola=rd.nextInt(0,37);
+        return num_bola;
+    }
+    public static int quantitatAposta(){
+        Scanner sc = new Scanner(System.in);
+        int num;
+        do{
+        System.out.println("Quina quantitat vols apostar?");
+        num = sc.nextInt();
+        }while(num<0);      
+        return num;
+        }
+
+    public static void pintaAsterisc(int numero){
+
+       for (int i=0; i<numero; i++){
+       System.out.print('*'); 
+    }  
+        System.out.print(numero);
+    }
+
+    public static int tipusAposta(){
+        Scanner sc = new Scanner(System.in);
+        int tipus;
+        System.out.println();
+        System.out.println("==============================");
+        System.out.println("|   Quina aposta vols fer?   |");
+        System.out.println("|   PARELL: indicar -2       |");
+        System.out.println("|   SENAR:  indicar -1       |");
+        System.out.println("| Número: indicar un 0 al 36 |");
+        System.out.println("==============================");
+        tipus = sc.nextInt();
+        while(tipus>36 || tipus<-2){
+        System.out.println("Has de triar una opció d'aposta vàlida");    
+        tipus = sc.nextInt();
+        }
+
+        return tipus;      
+    }
+
+    public static int apostaPunts(int puntsTotal, int puntsAposta){
+
+        if (puntsAposta>puntsTotal){
+            return -1;
+        }
+        else { return puntsAposta;}
+    }
+    public static int resultatJugada(int tipusAposta, int saldo, int puntsAposta, int bola){
+    switch (tipusAposta) {
+        case -2:
+            if (bola%2==0){
+                saldo=saldo*2;
+            }
+            else   {saldo=saldo;}    
+            break;
+
+        case -1:
+            if(bola%2==0){
+                saldo=saldo;
+            }
+            else saldo=saldo*2;
+            break;
+        default:
+            if (bola==tipusAposta){
+                saldo=saldo*36;
+            }
+            else{saldo=saldo;}
+
+            break;
+    }
+    return saldo;    
+
+    }
+}
