@@ -8,8 +8,6 @@ public class EX_1 {
         int puntos_Jug = 0;
         int puntos_Ord = 0;
 
-        System.out.println("¡Bienvenido al juego Piedra, Papel o Tijera!");
-
         while (puntos_Jug < 3 && puntos_Ord < 3) {
             int jugada_Jug = jugada();
             int jugada_Ord = JugadaOrdenador();
@@ -104,3 +102,4 @@ public class EX_1 {
         System.out.println(quien_juega + ": " + jugada_texto);
     }
 }
+
