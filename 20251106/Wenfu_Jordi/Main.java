@@ -19,21 +19,32 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        int jugador, ordenador, ganador, ptJugador1 = 0, ptJugador2 = 0;
+        int maxPoint, jugador, ordenador, ganador, ptJugador1 = 0, ptJugador2 = 0;
+        boolean seguirJugando;
         
-        jugador = jugada();
-        ordenador = jugada_ordenador();
+        maxPoint = pedirPuntuacionVictoria();
         
-        imp_jugada("Jugador 1", jugador);
-        imp_jugada("ordenador", ordenador);
+        do {
+ 
+            jugador = jugada();
+            ordenador = jugada_ordenador();
+
+            imp_jugada("Jugador 1", jugador);
+            imp_jugada("ordenador", ordenador);
+
+            ganador = ganador(jugador, ordenador);
+            
+            imp_ganador(ganador);
+            if (ganador == 1) {
+                ptJugador1 = aumentarPunto(ptJugador1);
+            }else if (ganador == 2){
+                ptJugador2 = aumentarPunto(ptJugador2);
+            }  
+
+            marcador(ptJugador1, ptJugador2);
+            seguirJugando = continuarJugando(maxPoint, ptJugador1, ptJugador2);
         
-        ganador = ganador(jugador, ordenador);
-        
-        imp_ganador(ganador);
-        
-        aumentarPunto(ganador);
-        
-        marcador(ptJugador1, ptJugador2);
+        } while (seguirJugando);
         
     }
     
@@ -146,6 +157,26 @@ public class Main {
         {
             System.out.println("Error");
         }
+    }
+    
+    public static boolean continuarJugando(int puntsMaxim, int pointPlayer1, int pointPlayer2)
+    {
+        boolean seguirJugando = true;
+        if (pointPlayer1 == puntsMaxim || pointPlayer2 == puntsMaxim) {
+            seguirJugando = false;
+        }
+       return seguirJugando; 
+    }
+    
+    public static int pedirPuntuacionVictoria()
+    {
+        Scanner sc = new Scanner(System.in);
+        int valor;
+        do {
+        System.out.println("Introduce el numero mxamimo de victorias");
+        valor = sc.nextInt();
+        } while(valor <= 0);
+        return valor;
     }
     
 }
