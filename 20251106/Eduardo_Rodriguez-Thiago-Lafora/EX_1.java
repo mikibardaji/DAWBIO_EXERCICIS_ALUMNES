@@ -3,14 +3,20 @@ import java.util.Scanner;
 public class EX_1 {
 
     public static void main(String[] args) {
-       int puntos_Jug = 0;
+        Scanner sc = new Scanner(System.in);
+
+        int puntos_Jug = 0;
         int puntos_Ord = 0;
+
+        System.out.println("¡Bienvenido al juego Piedra, Papel o Tijera!");
 
         while (puntos_Jug < 3 && puntos_Ord < 3) {
             int jugada_Jug = jugada();
             int jugada_Ord = JugadaOrdenador();
 
-            imp_jugada(); // ya tienes una función para mostrar o pedir jugada (no duplico nada)
+            imp_jugada("Jugador", jugada_Jug);
+            imp_jugada("Ordenador", jugada_Ord);
+
             int resultado = ganador(jugada_Jug, jugada_Ord);
             imp_ganador(resultado);
 
@@ -22,15 +28,17 @@ public class EX_1 {
 
             marcador(puntos_Jug, puntos_Ord);
         }
-        
+
+        sc.close();
     }
+
     //Eduardo
     public static int JugadaOrdenador() {
         int a = (int)(Math.random() * (2 - 0 + 1)) + 0; 
         System.out.println();
         return a;
-        
     }
+
     //Eduardo
     public static void imp_ganador (int ganador) {
         switch (ganador) {
@@ -43,15 +51,15 @@ public class EX_1 {
             case 2:
                 System.out.println("Ha ganado el ordenador");
                 break;
-        
         }
     }
+
     //Eduardo
     public static int aumentar_punto(int score) {
         score ++;
         return score;
-        
     }
+
     //Eduardo
     public static int ganador(int choose_player1, int choose_player2) {
 
@@ -65,10 +73,12 @@ public class EX_1 {
             return 2;
         }
     }
+
     //thiago
     public static void marcador(int point_player1, int point_player2) {
         System.out.println("Jugador 1: " + point_player1 + " - Jugador 2: " + point_player2);  
     }
+
     //thiago
     public static int jugada() {
         Scanner sc = new Scanner(System.in);
@@ -76,12 +86,21 @@ public class EX_1 {
         int eleccion = sc.nextInt();
         return eleccion;
     }
-    //Thiago
-    public static String imp_jugada() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Elige piedra, papel o tijera: ");
-        String jugador = sc.nextLine();
-        return jugador;
-    }
 
+    //Thiago
+    public static void imp_jugada(String quien_juega, int choose) {
+        String jugada_texto = "";
+        switch (choose) {
+            case 0:
+                jugada_texto = "Piedra";
+                break;
+            case 1:
+                jugada_texto = "Papel";
+                break;
+            case 2:
+                jugada_texto = "Tijera";
+                break;
+        }
+        System.out.println(quien_juega + ": " + jugada_texto);
+    }
 }
