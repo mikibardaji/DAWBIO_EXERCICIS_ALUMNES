@@ -47,9 +47,9 @@ public class Joc
         }
     }
 
-    public static void marcador(int jugador, int ordenador)
+    public static void marcador(int point_player1, int point_player2)
     {
-        System.out.println("Marcador -> Jugador: " + jugador + " | Ordenador: " + ordenador);
+        System.out.println("Marcador -> Jugador: " + point_player1 + " | Ordenador: " + point_player2);
     }
 
     public static int aumentar_punto(int score)
@@ -57,23 +57,23 @@ public class Joc
         return score+1;
     }
 
-    public static int ganador(int jugador, int ordenador)
+    public static int ganador(int choose_player1, int choose_player2)
     {
         int resultado;
 
-        if (jugador == ordenador)
+        if (choose_player1 == choose_player2)
         {
             resultado = 0;
         }
-        else if (jugador == 0 && ordenador == 2)
+        else if (choose_player1 == 0 && choose_player2 == 2)
         {
             resultado = 1;
         }
-        else if (jugador == 1 && ordenador == 0)
+        else if (choose_player1 == 1 && choose_player2 == 0)
         {
             resultado = 1;
         }
-        else if (jugador == 2 && ordenador == 1)
+        else if (choose_player1 == 2 && choose_player2 == 1)
         {
             resultado = 1;
         }
@@ -83,4 +83,5 @@ public class Joc
         }
         return resultado;
     }
+
 }
