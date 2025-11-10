@@ -118,13 +118,14 @@ public class Juego {
       if((usuario == 0 && maquina == 2) || (usuario == 2 && maquina == 1) || (usuario == 2 && maquina == 0))
       { ganador = 1; }
       else if (usuario == maquina){
-      
+      ganador;
       } 
       else { ganador = 2; }
     return ganador;
     }   
 
 }
+
 
 
 
