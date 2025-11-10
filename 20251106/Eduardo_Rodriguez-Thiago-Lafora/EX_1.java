@@ -3,17 +3,14 @@ import java.util.Scanner;
 public class EX_1 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int puntos_Jug = 0;
+       int puntos_Jug = 0;
         int puntos_Ord = 0;
 
         while (puntos_Jug < 3 && puntos_Ord < 3) {
             int jugada_Jug = jugada();
             int jugada_Ord = JugadaOrdenador();
 
-            System.out.println("Jugador: " + jugada_Jug);
-            System.out.println("Ordenador: " + jugada_Ord);
-
+            imp_jugada(); // ya tienes una función para mostrar o pedir jugada (no duplico nada)
             int resultado = ganador(jugada_Jug, jugada_Ord);
             imp_ganador(resultado);
 
@@ -24,12 +21,6 @@ public class EX_1 {
             }
 
             marcador(puntos_Jug, puntos_Ord);
-        }
-
-        if (puntos_Jug == 3) {
-            System.out.println("Has ganado la partida");
-        } else {
-            System.out.println("El ordenador ha ganado la partida");
         }
         
     }
@@ -92,4 +83,5 @@ public class EX_1 {
         String jugador = sc.nextLine();
         return jugador;
     }
+
 }
