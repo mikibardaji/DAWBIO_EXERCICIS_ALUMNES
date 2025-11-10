@@ -19,12 +19,12 @@ public class Juego {
     public static void main(String[] args) {
         // TODO code application logic here
            // TODO code application logic here
-        int puntosJugador = 0;
+         int puntosJugador = 0;
         int puntosMaquina = 0;
-        int continuar;
+       
 
         Scanner sc = new Scanner(System.in);
-
+        int puntosGanador = PedirPuntosVictoria();
         do {
             int usuario = jugadaUsuario();
             System.out.println(usuario);
@@ -46,13 +46,18 @@ public class Juego {
 
             marcador(puntosJugador, puntosMaquina);
 
-            System.out.println("¿Quieres jugar otra vez? (1 = sí, 0 = no)");
-            continuar = sc.nextInt();
+           
 
-        } while (continuar == 1);
+        } while (puntosJugador < puntosGanador && puntosMaquina < puntosGanador);
 
         System.out.println("Juego terminado. Resultado final:");
         marcador(puntosJugador, puntosMaquina);
+    }
+    public static int PedirPuntosVictoria(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("A cuantos puntos se decide el ganador?");
+        return sc.nextInt();
+               
     }
  //Made Abraham
     public static int jugadaUsuario() {
@@ -109,22 +114,17 @@ public class Juego {
     }
 //made ricardo
     public static int ganador(int usuario, int maquina) {
-        int ganador = 0;
+      int ganador = 0;
+      if((usuario == 0 && maquina == 2) || (usuario == 2 && maquina == 1) || (usuario == 2 && maquina == 0))
+      { ganador = 1; }
+      else if (usuario == maquina){
+      
+      } 
+      else { ganador = 2; }
+    return ganador;
+    }   
 
-        if (usuario == maquina) {
-            ganador = 0; // empate
-        } else if (
-            (usuario == 0 && maquina == 2) || // piedra gana a tijera
-            (usuario == 1 && maquina == 0) || // papel gana a piedra
-            (usuario == 2 && maquina == 1)    // tijera gana a papel
-        ) {
-            ganador = 1; // gana el jugador
-        } else {
-            ganador = 2; // gana la máquina
-        }
-
-        return ganador;
-    }
 }
+
 
 
