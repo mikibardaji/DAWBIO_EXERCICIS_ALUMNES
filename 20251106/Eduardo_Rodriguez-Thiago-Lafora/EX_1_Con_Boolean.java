@@ -7,8 +7,11 @@ public class EX_1_Con_Boolean {
 
         int puntos_Jug = 0;
         int puntos_Ord = 0;
+        boolean Jug_true = true, Ord_true = true;
 
-        while (puntos_Jug < 3 && puntos_Ord < 3) {
+        int puntos = pedirpuntosvictoria(sc);
+
+        while (Jug_true == true || Ord_true == true) {
             int jugada_Jug = jugada();
             int jugada_Ord = JugadaOrdenador();
 
@@ -25,7 +28,11 @@ public class EX_1_Con_Boolean {
             }
 
             marcador(puntos_Jug, puntos_Ord);
+            Jug_true = cuanto(puntos_Jug, puntos_Ord, puntos);
+            Ord_true = cuanto(puntos_Jug, puntos_Ord, puntos);
         }
+        boolean hola = campeon(puntos_Jug, puntos_Ord);
+        victoria(hola);
 
         sc.close();
     }
@@ -44,7 +51,7 @@ public class EX_1_Con_Boolean {
                 System.out.println("Hay empate");
                 break;
             case 1:
-                System.out.println("Has gando");
+                System.out.println("Has ganado");
                 break;
             case 2:
                 System.out.println("Ha ganado el ordenador");
@@ -74,7 +81,7 @@ public class EX_1_Con_Boolean {
 
     //thiago
     public static void marcador(int point_player1, int point_player2) {
-        System.out.println("Jugador 1: " + point_player1 + " - Jugador 2: " + point_player2);  
+        System.out.println("Jugador: " + point_player1 + " - Maquina: " + point_player2);  
     }
 
     //thiago
@@ -101,4 +108,41 @@ public class EX_1_Con_Boolean {
         }
         System.out.println(quien_juega + ": " + jugada_texto);
     }
+    public static int pedirpuntosvictoria(Scanner partidas){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Cuantas victorias para terminar el juego");
+        return sc.nextInt();
+    }
+
+    public static boolean campeon (int point_player1, int point_player2) {
+        if(point_player1 == 3 ) {
+            System.out.println("El ganador es el jugador 1");
+            return true;
+        }
+        else{
+            System.out.println("El Ganador es el jugador 2");
+            return false;
+        }
+        
+    }
+    public static void victoria (boolean hola) {
+        if (hola == true){
+            System.out.println("Tu ganaste");
+        }
+        else {
+            System.out.println("Gano la maquina");
+        }
+    }
+    public static boolean cuanto (int jug, int ord, int max){
+        if (jug >= max) {
+            return false;
+        }
+        else if (ord >= max) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
 }
