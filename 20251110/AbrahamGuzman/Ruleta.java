@@ -65,6 +65,24 @@ public class Ruleta {
         return eleccion; 
         
     }
-    public static int apostaPunts 
+   (int puntsTotal, int puntsAposta){
+     if (puntsAposta>puntsTotal){
+            return -1;
+        }
+        else { 
+         return puntsAposta;
+     }
+    }
+    public static int resultatJugada(int tipusAposta,int saldo,int puntsAposta, int bola){
+      if((tipusAposta == -2 && bola%2==0) || (tipusAposta == -1 && bola%2!=0)){
+         saldo = puntsAposta *=2;
+      } else if (tipusAposta == bola){
+           saldo = puntsAposta*=36;
+      } else {
+         saldo -=puntsAposta;
+      }
+      return saldo;
+    }
 }
+
 
