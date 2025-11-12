@@ -65,7 +65,7 @@ public class Ruleta {
         return eleccion; 
         
     }
-   (int puntsTotal, int puntsAposta){
+   public static int validarApuesta (int puntsTotal, int puntsAposta){
      if (puntsAposta>puntsTotal){
             return -1;
         }
@@ -84,5 +84,6 @@ public class Ruleta {
       return saldo;
     }
 }
+
 
 
