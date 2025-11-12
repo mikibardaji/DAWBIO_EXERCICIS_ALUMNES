@@ -12,11 +12,12 @@ import java.util.Scanner;
  * @author agu3018
  */
 public class Ruleta {
-    Scanner sc = new Scanner(System.in);
+   
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
         // TODO code application logic here
         
     }
@@ -66,3 +67,4 @@ public class Ruleta {
     }
     public static int apostaPunts 
 }
+
