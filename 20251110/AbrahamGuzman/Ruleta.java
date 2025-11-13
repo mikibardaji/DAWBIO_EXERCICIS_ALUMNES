@@ -50,7 +50,7 @@ public class Ruleta {
         int bola = rd.nextInt(0, 37);
         return bola;
     }
-    public static int apostaPunts(Scanner sc){
+    public static int TiposAPunts(Scanner sc){
         System.out.println("Que tipo de apuesta quiere realizar");
         System.out.println("1. -2 para pares");
         System.out.println("2. -1 para impar");
@@ -84,6 +84,7 @@ public class Ruleta {
       return saldo;
     }
 }
+
 
 
 
