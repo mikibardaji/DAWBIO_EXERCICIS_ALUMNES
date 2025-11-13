@@ -10,3 +10,6 @@ Tampoc funciona amb el tema dels punts de la carta.
 
 Reviseu el codi i arregleu-lo (poseu una marca a les linees que heu canviat tipus /*linea canviada*/)
 
+
+Dins aquesta mateixa carpeta hi ha el enunciat d'un examen que vam ficar fa 2 o 3 anys perque vegueu algun exemple.
+
