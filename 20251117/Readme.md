@@ -1,4 +1,4 @@
-# Realitza el exercici 1 d'aquest examen d'anys anteriors
+# Solucionar el joc del 7 i 1/2
 
 
 He pujat el codi del joc del 7 1/2
