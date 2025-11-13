@@ -17,8 +17,7 @@ public class ruleta {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int saldo = resultatJugada(27, 2, 2, 27);
-        System.out.println(saldo);
+        
     }
     
     private static int AfegirPunts(int saldo){
