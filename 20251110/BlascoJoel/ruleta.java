@@ -124,7 +124,7 @@ public class ruleta {
         System.out.print("Quin tipus d'aposta vols fer? (-2 Parell; -1 Senar; 1-36 Numero): ");
         int tipusAposta = sc.nextInt();
         
-        while(tipusAposta < -3 || tipusAposta > 36){
+        while(tipusAposta < -2 || tipusAposta > 36){
             System.out.print("Tipus d'aposta incorrecte, torna a posar un numero? (-2 Parell; -1 Senar; 0-36 Numero): ");
             tipusAposta = sc.nextInt();
         }
