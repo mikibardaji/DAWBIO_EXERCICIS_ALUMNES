@@ -17,8 +17,63 @@ public class Ruleta {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+          Scanner sc = new Scanner(System.in);
         // TODO code application logic here
+         int saldo = AgregarPuntos(sc, 0); // Pide al jugador añadir saldo inicial
+            boolean seguirJugando = true;
+
+    while (seguirJugando && saldo > 0) {
+        System.out.println("Tu saldo actual es: " + saldo + " puntos.");
+        int apuesta = CantidadApostar(sc);
+
+   
+        while (validarApuesta(saldo, apuesta) == -1) {
+            apuesta = CantidadApostar(sc);
+        }
+
+      
+        int tipoApuesta = TipusApuesta(sc);
+
+       
+        int bolaResultado = bola();
+        System.out.println("La bola ha caido en: " + bolaResultado);
+        pintaAsterisc(bolaResultado);
+
+     
+        int saldoAntes = saldo;
+        saldo = resultatJugada(tipoApuesta, saldo, apuesta, bolaResultado);
+
+        
+        if (saldo > saldoAntes) {
+            System.out.println("¡Has ganado esta ronda!");
+        } else {
+            System.out.println("Has perdido esta ronda.");
+        }
+
+        System.out.println("Tu saldo actual es: " + saldo);
+
+    
+        if (saldo > 0) {
+            System.out.println("¿Quieres seguir jugando? (s/n)");
+            char opcion = sc.next().toLowerCase().charAt(0);
+
+            if (opcion == 's') {
+                System.out.println("¿Quieres añadir mas puntos antes de seguir? (s/n)");
+                char recargar = sc.next().toLowerCase().charAt(0);
+                if (recargar == 's') {
+                    saldo = AgregarPuntos(sc, saldo);
+                }
+            } else {
+                seguirJugando = false;
+            }
+        } else {
+            System.out.println(" Te has quedado sin saldo. Fin del juego.");
+        }
+    }
+
+    System.out.println(" Gracias por jugar a la Ruleta ");
+        
+        
         
     }
     public static int CantidadApostar(Scanner sc){
@@ -46,11 +101,11 @@ public class Ruleta {
         }
     }
     public static int bola(){
-    Random rd = new Random();
+        Random rd = new Random();
         int bola = rd.nextInt(0, 37);
         return bola;
     }
-    public static int TiposAPunts(Scanner sc){
+    public static int TipusApuesta(Scanner sc){
         System.out.println("Que tipo de apuesta quiere realizar");
         System.out.println("1. -2 para pares");
         System.out.println("2. -1 para impar");
@@ -67,14 +122,16 @@ public class Ruleta {
     }
    public static int validarApuesta (int puntsTotal, int puntsAposta){
      if (puntsAposta>puntsTotal){
-            return -1;
+          System.out.println("La Apuesta supera su saldo vuelva a intentarlo"); 
+         return -1;
         }
         else { 
          return puntsAposta;
      }
     }
     public static int resultatJugada(int tipusAposta,int saldo,int puntsAposta, int bola){
-      if((tipusAposta == -2 && bola%2==0) || (tipusAposta == -1 && bola%2!=0)){
+        
+       if((tipusAposta == -2 && bola%2==0 && bola !=0) || (tipusAposta == -1 && bola%2!=0)){
          saldo += puntsAposta * 2;
       } else if (tipusAposta == bola){
            saldo += puntsAposta * 36;
@@ -82,8 +139,9 @@ public class Ruleta {
          saldo -=puntsAposta;
       }
       return saldo;
-    }
+    } 
 }
+
 
 
 
