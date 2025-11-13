@@ -1,7 +1,12 @@
 # Realitza el exercici 1 d'aquest examen d'anys anteriors
 
 
-Primer realitza les funcions i després de provar-les individualment, intenta fer un joc que simuli, una tanda de penaltis del mundial!
+He pujat el codi del joc del 7 1/2
+El joc ha de demanar  cartes fins que es plantin TOTS DOS (ja ve perque s'han pasat o perque han dit que es planten)
 
-<a href="https://raw.githubusercontent.com/mikibardaji/DAWBIO_EXERCICIS_ALUMNES/main/20251117/damdaw_UF2NF1Pe12020-2021_final.pdf" download="damdaw_UF2NF1Pe12020-2021_final.pdf">📄 Descargar PDF del examen final</a>
+El codi que he pujat no funciona del tot, perque ara mateix si es planta un sol sortiria.
+
+Tampoc funciona amb el tema dels punts de la carta.
+
+Reviseu el codi i arregleu-lo (poseu una marca a les linees que heu canviat tipus /*linea canviada*/)
 
