@@ -3,39 +3,26 @@ import java.util.Scanner;
 public class ex1 {
 
     public static void main(String[] args) {
-       
-        Scanner sc=new Scanner(System.in);
-        double resultado;
-        double num1,num2;
-        double n,N;
+        double num1, num2;
+        num1=pidenum(1);
+        num2=pidenum(2);
 
-        num1= pedirnumero(1);
-        num2=pedirnumero(2);
-       
+        double prodotto=prodotto(num1, num2);
 
-        resultado= producto(num1,num2);
-
-        System.out.println("El resultado es " + resultado);
-    }
-
-    public static double producto(double x, double y)
-    { 
-       double multi=x*y;
-       return multi;
-    };
-      
-    public static double pedirnumero(int x)
-    {
-        double n;
-        Scanner sc=new Scanner(System.in);
-        do{
-        System.out.println("Dime un numero "+ x);
-        n=sc.nextDouble();
-        }while(n<0); 
+        System.out.println("Il prodotto è " + prodotto);
         
-        return n;
-    
     }
-
+    public static double pidenum(double x){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Dime un numero: ");
+        x=sc.nextDouble();
+        return x;
+    }
+    public static double prodotto(double x, double y)
+    {
+     double prodotto;
+     prodotto=x*y;
+     return prodotto;   
+    }
+     
 }
-
