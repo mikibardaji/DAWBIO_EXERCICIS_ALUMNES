@@ -1,54 +1,39 @@
 import java.util.Scanner;
 
 public class ex4 {
-    // Programa que demana a l’usuari un nombre enter i mostra si és positiu, zero o negatiu. 
-    // Cal crear el mètode int obteSigne(int x), el qual retorna -1, 0 o +1 segons el nombre és negatiu, zero o positiu.
 
     public static void main(String[] args) {
-        
-        int v1;
-       v1=pedirValor(1);
+        int num1=pidenum();
+        obtensign(num1);
 
-        int respuesta = signe(v1); 
-        mostra(respuesta);
-        int num1 = 9;
-        mostra(num1);
-
-    
     }
-public static int pedirValor(int x)
-    {
+    public static int pidenum(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Pon el valor " + x +  ": ");
-        int num = sc.nextInt();
-        return num;
+        System.out.println("dime un numero: ");
+        int x=sc.nextInt();
+        return x;
+    }
+    public static int obtensign(int x)
+    {
+    
+     if(x==-1)
+     {
+        System.out.println("El numero es negativo");
+    }
+    else if (x==0)
+    {
+        System.out.println("El numero es 0");
+    }
+    else if(x==1)
+    {
+        System.out.println("El numero es positiu");
+    }
+    else 
+     {
+        System.out.println("Non valido");
     }
 
-    
-
-        private static int signe(int x) {
-        int respuesta;
-
-        if (x < 0) {
-            respuesta = -1;
-        } else if (x == 0) {
-            respuesta = 0;
-        } else {
-            respuesta = 1;
-        }
-
-        return respuesta;
+    return x;
     }
-    
-        private static void mostra(int x)
-        {
-            if (x == -1) {
-            System.out.println("El número es negatiu");
-        } else if (x == 0) {
-            System.out.println("El número es zero");
-        } else {
-            System.out.println("El número es positiu");
-        }
-        
-        }
+     
 }
