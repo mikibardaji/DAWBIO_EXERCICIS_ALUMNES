@@ -2,47 +2,34 @@ import java.util.Scanner;
 
 public class ex3 {
 
-    /**
-     * 3.	Programa que demana a l’usuari dos números enters i mostra quin és el menor.
-     * Cal implementar i usar el mètode int menor(int x, int y), 
-     *  el qual retorna el menor dels dos passats com a paràmetres.
-     */
     public static void main(String[] args) {
-        int v1, v2;
+        int num1=pidenum();
+        int num2=pidenum();
         
-        v1 = pedirValor(1);
-        v2 = pedirValor(2);
-       
-        int min = menor(v1, v2);
-        mostrarMasPequenyo(min);
+        numayor(num1,num2);
 
     }
-    
-    public static int menor(int x,int y)
-    {
-        int minimo;
-        if (x<y)
-        {
-            minimo = x;
-        }
-        else
-        {
-            minimo = y;
-        }
-        return minimo;
-    }
-    
-    public static int pedirValor(int x)
-    {
+    public static int pidenum(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Pon el valor " + x +  ": ");
-        int num = sc.nextInt();
-        return num;
+        System.out.println("dime un numero: ");
+        int x=sc.nextInt();
+        return x;
     }
-    
-    public static void mostrarMasPequenyo(int valor)
+    public static int numayor(int x, int y)
     {
-        System.out.println("el pequeño es " + valor);
+        int nummayor;
+     if(x<y)
+     {
+        nummayor=y;
+        System.out.println("El numero mayor es "+ y);
     }
-    
+    else 
+    {
+        nummayor=x;
+        System.out.println("El numero mayor es " + x);
+    }
+    return nummayor;
+    }
+     
 }
+
