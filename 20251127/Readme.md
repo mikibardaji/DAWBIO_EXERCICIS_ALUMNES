@@ -1,0 +1,3 @@
+# Complimentar clase Got
+
+Crear el metode per plenar el got a partir d'un liquid. No s'ha de plenar del tot, sinò amb el liquid que li vingui d'entrada. Tenir amb compte que el got, pot tenir ja liquid, que té uns límits, etc etc...
