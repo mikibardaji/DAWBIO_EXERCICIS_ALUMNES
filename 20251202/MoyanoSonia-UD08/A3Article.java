@@ -33,7 +33,7 @@ public class A3Article {
         }
             a2.imprimir();
 
-        // PVP con descuento
+        // PVP amb descompte
         System.out.println("PVP amb 10% de descompte: " + a2.getPVPDescompte(10));
     }
 }
