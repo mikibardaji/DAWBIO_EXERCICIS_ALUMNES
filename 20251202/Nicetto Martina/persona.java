@@ -1,6 +1,5 @@
 package objectos;
 
-import java.text.StringCharacterIterator;
 
 public class persona {
     private int dni;
@@ -28,3 +27,4 @@ public class persona {
 
 
 }
+
