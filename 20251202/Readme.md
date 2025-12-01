@@ -7,5 +7,7 @@ Però feu amb ordre o sigui comenceu amb la classe Punto, feu el apartat A, desp
 Un cop fet tot, torneu a començar amb la classe Persona. i despres la última. Entregueu aquí i pugeu la solució a la carpeta de Github, recordant ficant el missatge
 
 . Punto
+
 . Persona
+
 . Articulo
