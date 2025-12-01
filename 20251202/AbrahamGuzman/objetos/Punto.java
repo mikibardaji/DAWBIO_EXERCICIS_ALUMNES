@@ -36,4 +36,19 @@ public class Punto {
         System.out.println("Esta es x " + x);
         System.out.println("Esta es y " + y);
     }
+     /*
+    
+    Cre un objeto con sus coordenadas x y y de manera aleatoria
+    */
+    
+    public static Punto crearPuntoAleatorio(){
+      //static es un metodo que se puede crear solo sin variable aasociada 
+        Random rd = new Random();
+        int x = rd.nextInt(0, 101);
+        int y = rd.nextInt(0, 101);
+        Punto p = new Punto(x, y);
+        return p;
+    
+    }
 }
+
