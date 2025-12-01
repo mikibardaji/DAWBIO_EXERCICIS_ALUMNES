@@ -23,6 +23,11 @@ public class PuntoMain {
         pt.setY(8);
         
         pt.mostrar();
+        // de esta manera se puede crear un punto aleatorio 
+        Punto c = Punto.crearPuntoAleatorio();
+        
+        c.mostrar();
     }
     
 }
+
