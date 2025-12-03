@@ -1,5 +1,5 @@
 # Apartat E
 
-Realitzar tots els exercicis de totes les classes del apartat E.
+Realitzar el apartat E, per totes les classes treballades amb anterioritats dins el pdf d'exercicis.
 
-El codi, el vaig pujar al githbo codi de classe.
+El codi, el vaig pujar al github codi de classe.
