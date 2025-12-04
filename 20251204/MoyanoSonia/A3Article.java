@@ -14,10 +14,14 @@ public class A3Article {
         a2.imprimir();
         
         
-        //canviem preu i comprobem
+        //canviem preu i IVA i comprobem
         a1.setPreu(12.5);
+        a1.setIVA(4);
         System.out.println("=== Actualització Article 1 ===");
         a1.imprimir();
+
+        //canviem tipus d'IVA per probar l'error
+        a1.setIVA(100);
 
         // comprobem una venda
         if (a2.vendre(5)){
