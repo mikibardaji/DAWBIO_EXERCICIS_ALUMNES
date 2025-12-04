@@ -12,7 +12,7 @@ public class rettangolo {
         this.y1 = y1;
         this.y2 = y2;
     } else {
-        System.err.println("ERROR al instanciar Rectangulo: coordenadas incorrectas.");
+        System.err.println("ERROR");
         this.x1 = x1;
         this.x2 = x2;
         this.y1 = y1;
@@ -25,7 +25,7 @@ public class rettangolo {
         if (x1 < this.x2) {
             this.x1 = x1;
         } else {
-            System.err.println("ERROR: x1 debe ser menor que x2.");
+            System.err.println("ERROR");
         }
     }
 
@@ -34,7 +34,7 @@ public class rettangolo {
         if (y1 < this.y2) {
             this.y1 = y1;
         } else {
-            System.err.println("ERROR: y1 debe ser menor que y2.");
+            System.err.println("ERROR");
         }
     }
 
@@ -43,7 +43,7 @@ public class rettangolo {
         if (x2 > this.x1) {
             this.x2 = x2;
         } else {
-            System.err.println("ERROR: x2 debe ser mayor que x1.");
+            System.err.println("ERROR");
         }
     }
 
@@ -52,11 +52,9 @@ public class rettangolo {
         if (y2 > this.y1) {
             this.y2 = y2;
         } else {
-            System.err.println("ERROR: y2 debe ser mayor que y1.");
+            System.err.println("ERROR");
         }
     }
-
-    // ====== GETTERS ======
 
     public int getx1()
     {
@@ -124,4 +122,5 @@ public class rettangolo {
         System.out.println("  Esquina inferior izquierda: (" + x1 + ", " + y1 + ")");
         System.out.println("  Esquina superior derecha:   (" + x2 + ", " + y2 + ")");
     }
+
 }
