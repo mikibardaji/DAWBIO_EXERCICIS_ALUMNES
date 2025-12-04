@@ -1,4 +1,4 @@
-# Programar SubwaySurfers
+# Programar SubwaySurfers per la tornada del pont de Desembre
 
 Realitzar el codi del enunciat de subway surfers que esta al campus.
 
