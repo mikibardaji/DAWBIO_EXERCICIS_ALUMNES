@@ -1,0 +1,115 @@
+package Objetos;
+
+public class Persona {
+    private final String dni;
+    private String nombre;
+    private String apellidos;
+    private int edad;
+
+    public static final int mayoriaEdad = 18;
+
+    public Persona(String dni, String nombre, String apellidos, int edad) {
+        if (validarDNI(dni)) {
+            this.dni = dni;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.edad = edad;
+        } else {
+            System.err.println("ERROR al instanciar Persona: DNI inválido -> " + dni);
+            this.dni = null;
+            this.nombre = null;
+            this.apellidos = null;
+            this.edad = 0;
+        }
+    }
+
+    public String getDni() { return dni; }
+    public String getNombre() { return nombre; }
+    public String getApellidos() { return apellidos; }
+    public int getEdad() { return edad; }
+
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setApellidos(String apellidos) { this.apellidos = apellidos; }
+    public void setEdad(int edad) { this.edad = edad; }
+
+    public void imprime() {
+        System.out.print("DNI: " + (dni == null ? "(no asignado)" : dni));
+        System.out.print("  Nombre: " + (nombre == null ? "(no asignado)" : nombre));
+        System.out.print("  Apellidos: " + (apellidos == null ? "(no asignado)" : apellidos));
+        System.out.println("  Edad: " + edad);
+    }
+
+    public boolean esMayorEdad() {
+        return edad >= mayoriaEdad;
+    }
+
+    public boolean esJubilado() {
+        return edad >= 65;
+    }
+
+    public int diferenciaEdad(Persona p) {
+        return Math.abs(this.edad - p.edad);
+    }
+
+    public class Persona {
+    private final String dni;
+    private String nombre;
+    private String apellidos;
+    private int edad;
+
+    public static final int mayoriaEdad = 18;
+
+    public Persona(String dni, String nombre, String apellidos, int edad) {
+        if (validarDNI(dni)) {
+            this.dni = dni;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.edad = edad;
+        } else {
+            System.err.println("ERROR al instanciar Persona: DNI inválido -> " + dni);
+            this.dni = null;
+            this.nombre = null;
+            this.apellidos = null;
+            this.edad = 0;
+        }
+    }
+
+    public String getDni() { return dni; }
+    public String getNombre() { return nombre; }
+    public String getApellidos() { return apellidos; }
+    public int getEdad() { return edad; }
+
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setApellidos(String apellidos) { this.apellidos = apellidos; }
+    public void setEdad(int edad) { this.edad = edad; }
+
+    public void imprime() {
+        System.out.print("DNI: " + (dni == null ? "(no asignado)" : dni));
+        System.out.print("  Nombre: " + (nombre == null ? "(no asignado)" : nombre));
+        System.out.print("  Apellidos: " + (apellidos == null ? "(no asignado)" : apellidos));
+        System.out.println("  Edad: " + edad);
+    }
+
+    public boolean esMayorEdad() {
+        return edad >= mayoriaEdad;
+    }
+
+    public boolean esJubilado() {
+        return edad >= 65;
+    }
+
+    public int diferenciaEdad(Persona p) {
+        return Math.abs(this.edad - p.edad);
+    }
+
+    public static boolean validarDNI(String dni) {
+    	if (dni == null || dni.length() != 9) {
+		return false;
+	}
+	else {
+		return true;
+	}
+
+    }
+}
+}

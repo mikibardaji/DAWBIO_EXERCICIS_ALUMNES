@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+import Objetos.Persona;
+
+public class MainPersona {
+    public static void main(String[] args) {
+        Persona p1 = new Persona("12345678Z", "Ana", "García", 20);
+        Persona p2 = new Persona("87654321A", "Luis", "Pérez", 70);
+
+        p1.imprime();
+        p2.imprime();
+
+        System.out.println(p1.esMayorEdad());
+        System.out.println(p2.esJubilado());
+        System.out.println(p1.diferenciaEdad(p2));
+
+        Persona pErr = new Persona("12X34", "Error", "Dni", 40);
+        pErr.imprime();
+
+        System.out.println(Persona.validarDNI("12345678Z"));
+        System.out.println(Persona.validarDNI("1234A"));
+    }
+}

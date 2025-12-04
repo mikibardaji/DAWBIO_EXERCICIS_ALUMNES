@@ -1,0 +1,22 @@
+import Objetos.Punto;
+
+public class MainPunto {
+    public static void main(String[] args) {
+        Punto p1 = new Punto(5, 0);
+        Punto p2 = new Punto(10, 10);
+
+        p1.imprime();
+        p2.imprime();
+        System.out.println(p1.distancia(p2));
+
+        Punto ale = Punto.creaPuntoAleatorio();
+        ale.imprime();
+
+        Punto a = Punto.creaPuntoAleatorio();
+        Punto b = Punto.creaPuntoAleatorio();
+
+        a.imprime();
+        b.imprime();
+        System.out.println(a.distancia(b));
+    }
+}
