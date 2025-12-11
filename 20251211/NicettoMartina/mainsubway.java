@@ -1,4 +1,4 @@
-package objetos;
+package objectos;
 
 public class mainsubway {
     public static void main(String[] args) {
@@ -24,4 +24,5 @@ public class mainsubway {
         System.out.println("Distancia total recorrida: " + jugador1.getdistance());
     }
 }
+
 
