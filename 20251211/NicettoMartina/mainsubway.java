@@ -1,6 +1,6 @@
 package objetos;
 
-public class Main {
+public class mainsubway {
     public static void main(String[] args) {
 
         subway jugador1 = new subway("Carlos", 0, 0, 50, false);
@@ -24,3 +24,4 @@ public class Main {
         System.out.println("Distancia total recorrida: " + jugador1.getdistance());
     }
 }
+
