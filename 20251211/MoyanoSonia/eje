@@ -1,0 +1,37 @@
+public abstract class equipo {
+    protected static int id;
+    private int idequipo;
+    protected String nom;
+    protected int edad;
+    public equipo(String nom, int edad){
+        id++;
+        idequipo = id;
+        this.nom = nom;
+        this.edad = edad;
+    }
+    public abstract void viajar();
+    public  abstract void concentrarse();
+
+
+    public int getid(){
+        return id;
+    }
+    public String getnom(){
+        return nom;
+    }
+    public int getedad(){
+        return edad;
+    }
+    public void setnom(String nom){
+        this.nom = nom;
+    }
+    public void setedad(int edad){
+        this.edad = edad;
+    }
+
+    public String toString()
+    {
+        return "ID: "+id+" Nombre: "+nom+" Edad: "+edad;
+    }
+
+}
