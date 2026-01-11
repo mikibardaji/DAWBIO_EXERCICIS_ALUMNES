@@ -46,9 +46,7 @@ public class AppPokemon {
     System.out.println(" ");
     System.out.println("-------------Ronda " + i+"-----------------");
     p2.rebreImpacte(p1);
-    p1.mostrarEstatPokemon();
     p1.rebreImpacte(p2);
-    p2.mostrarEstatPokemon();
     }while(p1.isViu()&&p2.isViu());
     }
 
