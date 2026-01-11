@@ -23,6 +23,7 @@ if (lp < 15) {
         defensa=true;
     }
 if (defensa){
+    System.out.println("Defensa de " + getNom() + " activada dany reduit a la meitat");
     return dany/2;
 }
 return dany;
