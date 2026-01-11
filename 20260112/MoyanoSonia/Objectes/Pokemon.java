@@ -64,10 +64,15 @@ this.viu=true;
 
 protected double aplicarModificador(Pokemon atacant, int dany) {
 
-    if (this instanceof Electric && atacant instanceof Aigua) return (double)(dany * 0.75);
-    if (this instanceof Veri && atacant instanceof Electric) return (double)(dany * 0.75);
-    if (this instanceof Aigua && atacant instanceof Veri) return (double)(dany * 0.75);
-
+    if (this instanceof Electric && atacant instanceof Aigua) {
+        System.out.println("Pokemon Electric resistent a tipus Aigua, es redueix el dany");
+        return (double)(dany * 0.75);}
+    if (this instanceof Veri && atacant instanceof Electric){
+        System.out.println("Pokemon Verí resistent a tipus Electric, es redueix el dany");
+        return (double)(dany * 0.75);}
+    if (this instanceof Aigua && atacant instanceof Veri) {
+        System.out.println("Pokemon Aigua resistent a tipus Verí, es redueix el dany");
+        return (double)(dany * 0.75);}
     return dany;
 }
 
@@ -87,5 +92,4 @@ for  (int i=1; i<=getLp(); i++){
     
         System.out.print("=" );
     }
-}
 }
