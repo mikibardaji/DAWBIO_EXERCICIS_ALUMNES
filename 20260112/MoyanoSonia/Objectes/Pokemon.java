@@ -83,7 +83,7 @@ System.out.print(getNom() + " " +getLp() +" LP " );
 if (isViu()==true){System.out.print(" viu");}
 else{System.out.print(" mort");}
 
-for  (int i=0; i<=getLp(); i++){
+for  (int i=1; i<=getLp(); i++){
     
         System.out.print("=" );
     }
