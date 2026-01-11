@@ -51,7 +51,13 @@ public class AppPokemon {
     p2.mostrarEstatPokemon();
     }while(p1.isViu()&&p2.isViu());
     }
-}
 
-
+    if (p1.isViu()){
+        System.out.println(" ");
+        System.out.println(p1.getNom() +" Ha guanyat el combat "); 
+    }
+    else {
+        System.out.println(" ");
+        System.out.println(p2.getNom() +" Ha guanyat el combat "); }
+    }
     }
