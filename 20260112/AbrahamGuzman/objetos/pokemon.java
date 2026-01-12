@@ -8,45 +8,73 @@ package objetos;
  *
  * @author xabiel
  */
-public abstract class pokemon {
-    protected final nombres nom;
-    protected int LP;
-    protected boolean vivo;
+import java.util.Random;
 
-    public pokemon(nombres n) {
-        this.nom = n;
-        this.LP = 100;
+public abstract class Pokemon implements AccionesCombate {
+    private final LlistaNoms nom;
+    protected int lifePoints;
+    protected boolean viu;
+    protected Random random;
+
+    protected Pokemon(LlistaNoms nom, int lifePointsInicials) {
+        this.nom = nom;
+        this.lifePoints = lifePointsInicials;
+        this.viu = true;
+        this.random = new Random();
     }
 
-    public nombres getNom() {
+    public LlistaNoms getNom() {
         return nom;
     }
 
-    public int getLP() {
-        return LP;
+    public int getLifePoints() {
+        return lifePoints;
     }
 
-    public boolean isVivo() {
-        return vivo;
+    public boolean isViu() {
+        return viu;
     }
 
-    public void setLP(int LP) {
-        this.LP = LP;
+    public void mostrarDades() {
+        System.out.println("Nom: " + nom + ", Life Points: " + lifePoints);
     }
 
-    public void setVivo(boolean vivo) {
-        this.vivo = vivo;
-    }
+    public abstract String getCaracteristiquesEspecifiques();
 
-   
     @Override
     public boolean equals(Object obj) {
-       if(this == obj) return true; 
-        if(!(obj instanceof pokemon)) return false; 
-        pokemon poke = (pokemon) obj; 
-        
-        return this.nom == poke.nom;
+        if (this == obj) return true;
+        if (obj == null || !(obj instanceof Pokemon)) return false;
+        Pokemon other = (Pokemon) obj;
+        return this.nom == other.nom;
     }
+
+    @Override
+    public int atac() {
+        int forca = random.nextInt(11);
+        System.out.println(nom + " ataca amb una força de " + forca);
+        return forca;
+    }
+
+    protected void mostrarEstadoPokemon() {
+        String estat = lifePoints > 0 ? "viu" : "mort";
+        String barraVida = "=".repeat(Math.max(0, lifePoints));
+        System.out.println(nom + " " + lifePoints + " LP " + estat + " " + barraVida);
+    }
+
+    @Override
+    public abstract void recibirImpacto(Pokemon atacante);
+
+    protected int calcularDanyPerTipus(Pokemon atacante, int danyBase) {
+        if ((atacante instanceof PokemonAigua && this instanceof PokemonElectric) ||
+            (atacante instanceof PokemonElectric && this instanceof PokemonVeri) ||
+            (atacante instanceof PokemonVeri && this instanceof PokemonAigua)) {
+            return (int)(danyBase * 0.75);
+        }
+        return danyBase;
+    }
+
     
     
 }
+
