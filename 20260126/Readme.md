@@ -18,4 +18,6 @@ que la posición sea válida (o sea, no supere la length).
 Si esa posición está informada, pregunte: ¿Quieres machacar el resultado anterior (s/n), 
 o si queréis (SI/NO), o si queréis (Sí-1, No-0)? La que sepáis resolver.
 
+#Feina per casa no de codificació 
+
 Per casa, mira els primers minuts d'aquest concurs, perque el dijous codificarem [aquest joc](https://www.telecinco.es/television/a-la-carta/20250728/alla-tu-programa-completo-video_18_016231909.html). Sol cal mirar, fins que ha obert 3 o 4 caixes i truca la banca al telefon per fer una oferta.
