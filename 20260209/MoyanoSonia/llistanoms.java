@@ -1,7 +1,7 @@
 import Objectes.nom;
 import java.util.Scanner;
 
-public class App {
+public class llistanoms {
     public static void main(String[] args) throws Exception {
         //Crea una llista de noms que gestionarem amb un menú, amb les seguents opcions Llistar noms 
         // (mostrarà tots els noms fins al moment, al moment de llistar-lo, els ha de mostrar amb majuscules i a mes al canto
