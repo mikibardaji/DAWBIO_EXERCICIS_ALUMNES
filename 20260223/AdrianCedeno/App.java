@@ -20,7 +20,6 @@ public static void ejercicio(){
         System.out.println("Mensaje error: " + e.getMessage());
     }
 }
-
 public static void ejercicio2(){
     Scanner sc = new Scanner(System.in);
     Random rd = new Random();
@@ -42,6 +41,7 @@ public static void ejercicio2(){
         }
     }while(posicion>0);
 }
+
 
 
 
