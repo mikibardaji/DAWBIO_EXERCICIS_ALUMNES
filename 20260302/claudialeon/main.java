@@ -112,4 +112,5 @@ public class main {
         System.out.println("No existeix aquest amic");
     }
 
+
 }
