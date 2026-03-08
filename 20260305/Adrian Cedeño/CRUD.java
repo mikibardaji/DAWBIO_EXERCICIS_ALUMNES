@@ -209,7 +209,6 @@ public class CRUD {
         }
     }
 
-    // === NUEVA FUNCION ===
     private static void AñadirEnPosicion(List<Luchador> mundial) {
         Scanner sc = new Scanner(System.in);
         try {
@@ -245,3 +244,4 @@ public class CRUD {
         }
     }
 }
+
