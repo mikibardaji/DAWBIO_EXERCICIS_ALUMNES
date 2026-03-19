@@ -1,4 +1,4 @@
-##Exercici 1: El Magatzem de Logística
+#Exercici 1: El Magatzem de Logística
 Una empresa rep paquets. Cada paquet té un Codi de Barres (String) i un Producte (String). L'empresa vol imprimir la llista i que els paquets surtin en el mateix ordre en què han arribat.
 
 Crea el Map adequat segons la teoria.
