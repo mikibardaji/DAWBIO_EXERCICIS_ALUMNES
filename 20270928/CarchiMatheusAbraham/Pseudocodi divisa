@@ -1,0 +1,13 @@
+Pseudocódigo para un conversor de monedas:
+
+- Tiene que pedir cuántos euros tienes, 
+	tiene que pedir el cambio de divisa
+	y calcular cuántas monedas de la nueva divisa tendrias
+
+1. Mostrar: "Cuántos euros tienes?"
+2. Esperar: {cantidadEuros}
+3. Mostrar: "A cuánto equivale un euro en la nueva divisa?"
+4. Esperar: {equivalenciaEurosDivisa}
+
+5. Calcular:  cantidadDivisa = cantidadEuros * equivalenciaEurosDivisa
+6. Mostrar: "Tendrias {cantidadDivisa} monedas de la nueva divisa!"
