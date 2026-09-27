@@ -1,0 +1,9 @@
+Pseudocodi canvi de divisa:
+- Mostrar "Quina moneda vols canviar?"
+- Esperar a resposta
+- Mostrar "A que vols canviarla?"
+- Esperar a resposta
+- Mostrar "Cuants {moneda_1} vols pasar a {moneda_2}
+- Esperar a resposta
+- Calcular {valormoneda_1} * {valormoneda_2}
+- Mostrar resposta
