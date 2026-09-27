@@ -1,0 +1,11 @@
+Mostrar "Hola bona tarda, passarem els diners que vulguis al canvi de divisa que vols"
+
+Mostrar "Quants diners vols canviar?"
+Esperar diners
+
+Mostrar "Quin és el canvi de divisa actual?"
+Esperar canviDivisa
+
+Calcular dinersCanviDivisa = diners * canviDivisa
+
+Mostrar "Els diners que tens en la nova divisa són: ", dinersCanviDivisa,
