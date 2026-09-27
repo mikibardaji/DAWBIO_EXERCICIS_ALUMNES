@@ -1,0 +1,6 @@
+Mostrar “Quants euros tens?”
+Esperar euros
+Mostrar “Quin és el canvi de divisa?”
+Esperar canvi
+Calcula euros*canvi = nova_divisa
+Mostrar “Tens nova_divisa monedes de la nova divisa”
