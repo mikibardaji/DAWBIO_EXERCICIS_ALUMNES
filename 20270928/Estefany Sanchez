@@ -1,0 +1,18 @@
+PSEUDOCÓDIGO
+ALGORITMO CONVERSOR DIVISA  
+
+//Declaración de variables
+Definir euros, cambio, resultado como real
+
+//Entrada de datos
+Escribir “Introduce la cantidad de euros: ”
+Leer euros
+Escribir “Introduce el tipo de cambio (ej. 1.26): ”
+Leer cambio
+
+//Proceso de calculo
+resultado = euros * cambio
+
+//Salida de datos
+Escribir “Tendrás un total de: ”, resultado, “monedas de la nueva divisa”
+FinAlgoritmo
