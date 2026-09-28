@@ -1,0 +1,14 @@
+Ejercicio 2 
+
+Pseudocódigo para un conversor de monedas 
+Tiene que pedir cuantos euros tienes, tiene que pedir el cambio de divisa y calcular cuántas 
+monedas de la nueva divisa tendrias  
+Importar valor moneda de todo el mundo * 
+Mostrar “Valor moneda” 
+Mostrar “Dinero:” 
+Esperar ”Cantidad Dinero” 
+Mostrar “Tipo de moneda” 
+Esperar “Tipo de moneda” 
+Mostrar “Dinero” + “Tipo de moneda” 
+Calcular “Resultado= VALOR MONEDA x Cantidad Moneda” 
+Mostrar “Resultado” 
