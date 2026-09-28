@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication6;
+import java.util.Scanner;
+
+/**
+ *
+ * @author jlu1859
+ */
+public class JavaApplication6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner lector = new Scanner(System.in);
+        System.out.println("Entra els teus diners:");
+        double diners = lector.nextDouble();
+        Scanner lector1 = new Scanner(System.in);
+        System.out.println("Precio de la divisa a cambiar ");
+        double divisa = lector1.nextDouble();
+        double canvi = diners * divisa;
+        System.out.println("En la nova divisa tens: " + canvi );
+    }
+    
+}
