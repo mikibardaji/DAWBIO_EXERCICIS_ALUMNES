@@ -14,8 +14,7 @@ public class Example2PrimersPalometes {
 
     /**
      *1.	
-     * 
-1.  Mostrar “Cuanto dinero tienes”
+     * Mostrar “Cuanto dinero tienes”
 2.	Esperar dineroCartera
 3.	Mostrar “Quantes entrades has comprat”
 4.	Esperar numEntrades
@@ -28,7 +27,7 @@ public class Example2PrimersPalometes {
      */
     public static void main(String[] args) {
         
-    //Denifir numeros
+    //Denifir constante
         double dinersCartera, preuEntrada, preuTotalEntrades, restantCartera;
         int quantitatEntrades;
     
