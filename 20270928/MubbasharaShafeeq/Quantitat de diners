@@ -3,8 +3,6 @@
 package palometes;
 import java.util.Scanner;
 /**
- *
- * @author gga2951
  */
 public class Palometes {
 
