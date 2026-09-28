@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+/**
+ * Llegeix el preu d'una entrada de cinema i la quantitat desitjada,
+ * calcula el total a pagar i ho imprimeix.
+ * @author Jose
+ */
+public class EntradesCinema {
+    public static void main(String[] args) {
+        // --- Pregunta 1: preu unitari ---
+        try (Scanner lector = new Scanner(System.in)) {
+            // --- Pregunta 1: preu unitari ---
+            System.out.print("Quin és el preu d'una entrada? ");
+            double preuEntrada = lector.nextDouble();
+            
+            // --- Pregunta 2: quantitat ---
+            System.out.print("Quantes entrades vols comprar? ");
+            int cantidad = lector.nextInt();
+            
+            // --- Càlcul del total ---
+            double total =double total = preuEntrada * cantidad;
+            
+            // --- Resultat ---
+            System.out.printf("El total a pagar és %.2f euros.%n", total);
+        }
+    }
+}
+    
+}
