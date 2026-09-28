@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exemple1;
+
+import java.util.Scanner;
+
+/**
+ * Llegeix una distància en milles marines i la converteix a metres.
+ * @author jgu3417
+ */
+public class Exemple1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        final double MILLES_A_METRES = 1852;  //factor conversió constant
+        Scanner lector = new Scanner(System.in);
+        
+        
+        //llegir distància en milles
+        System.out.print("Entra la distancia en milles: ");
+        double distanciaEnMilles = lector.nextDouble();
+        
+        //calcular conversió de milles a metres
+        double distanciaEnMetres = distanciaEnMilles * MILLES_A_METRES;
+        
+        //imprimir resultat a l'usuari
+        System.out.println( distanciaEnMilles + " milles equivalen a " + distanciaEnMetres + " metres " );
+    }
+    
+}
