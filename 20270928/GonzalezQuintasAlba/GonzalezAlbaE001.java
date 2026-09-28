@@ -10,3 +10,4 @@ STEPS:
 6. Calcular (dinero_efectivo_usuario) * (cambio_divisa) y el resultado de esta multiplicación es el resultado esperado y que llamaremos dinero_cambio_divisa.
 7. Mostrar el contenido de la variable dinero_cambio_divisa.
 8. FINAL
+..
