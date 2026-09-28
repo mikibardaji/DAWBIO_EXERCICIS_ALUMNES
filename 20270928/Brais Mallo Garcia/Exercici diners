@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Exemple1 {
+
+    public static void main(String[] args) {
+
+        final double DOLAR_A_EURO = 0.85;
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("================================");
+        System.out.println("       CONVERSOR DE DINERS");
+        System.out.println("================================");
+
+        // Mostrar quants diners tens
+        System.out.println("Mostrar quants diners tens");
+
+        // Llegir la quantitat de dòlars
+        System.out.print("Entra la quantitat de dòlars que tens: ");
+        double dinersEnDollars = lector.nextDouble();
+
+        // Convertir dòlars a euros
+        double dinersEnEuros = dinersEnDollars * DOLAR_A_EURO;
+
+        // Mostrar la quantitat introduïda
+        System.out.println();
+        System.out.println("Tens " + dinersEnDollars + " dòlars.");
+
+        // Mostrar la conversió
+        System.out.println("Això equival a " + dinersEnEuros + " euros.");
+
+        // Mostrar informació final
+        System.out.println();
+        System.out.println("---------- RESULTAT ----------");
+        System.out.println("Dòlars introduïts: " + dinersEnDollars + " $");
+        System.out.println("Euros equivalents: " + dinersEnEuros + " €");
+        System.out.println("------------------------------");
+
+        lector.close();
+    }
+}
