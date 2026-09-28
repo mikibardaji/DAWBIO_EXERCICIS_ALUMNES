@@ -16,7 +16,7 @@ public class Palometes {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner lector = new Scanner(System.in);
-        System.out.println("Entra els teus diners:");
+        System.out.println("Quantitat diners:");
         double diners = lector.nextDouble();
         Scanner lector1 = new Scanner(System.in);
         System.out.println("Quant costa l'entrada? ");
@@ -25,7 +25,7 @@ public class Palometes {
         System.out.println("Quantes entrades? ");
         double numero_entrades = lector3.nextDouble();
         double diners_restants = diners - preu_entrada * numero_entrades;
-        System.out.println(diners_restants + " € son el que queden ");
+        System.out.println(diners_restants + " €");
         
     }
     
