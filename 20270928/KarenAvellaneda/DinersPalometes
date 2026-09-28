@@ -1,0 +1,17 @@
+/**
+ *
+ * @author Kav4778
+ */
+public class Mavenproject1 {
+    public static void main(String[] args) {
+    Scanner lector = new
+            Scanner (System.in);
+    System.out.println("quants diners tens?");
+    double dinersCartera = lector.nextDouble();
+    System.out.println("Quantes entrades has comprat?");
+    int numEntrades = lector.nextInt();
+    System.out.println("Quant val una entrada?");
+    double preuEntrada = lector.nextDouble();
+    double preuEntradaTotal = preuEntrada * numEntrades;
+    double dinersRestants = dinersCartera - preuEntradaTotal;
+    System.out.println("Et queden"  +  dinersRestants + "euros") ;
