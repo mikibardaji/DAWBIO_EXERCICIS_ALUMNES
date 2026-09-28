@@ -25,9 +25,8 @@ public class Exemple2DinersPalometes {
         double preuTotal = preuEntrada*numEntrades;
         System.out.println("El preu total son " + preuTotal + " euros");
         double Totalcartera = dinersCartera - preuTotal;
-        System.out.println("Et quedan " + Totalcartera + " euros a la cartera");
+        System.out.println("Et quedan " + Totalcartera + " $ a la cartera");
      
     }
     
 }
-
