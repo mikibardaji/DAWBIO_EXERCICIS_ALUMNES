@@ -1,0 +1,58 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package quantes.entrades;
+
+/**
+ *
+ * @author mubba
+ */
+    import java.util.Scanner;
+
+public class QuantesEntrades {
+
+
+    /**
+     * @param args the command line arguments
+     * @param numEntrades
+     */    
+    public static void main(String[] args) {
+        
+        Scanner teclat = new Scanner(System.in);
+        
+         int numEntrades;
+        double preuEntrada = 0;
+                double total;
+                double dinersCartera;
+                double dinersRestants;
+                
+                System.out.println("Quantes entrades");
+        numEntrades = teclat.nextInt();
+        
+        System.out.println("Quant val una entrada?");
+        preuEntrada = teclat.nextDouble();
+        
+               
+             total = preuEntrada * numEntrades;
+             System.out.println("El totat es"+total);
+             
+        System.out.println("Quants diners tens a la cartera");
+        dinersCartera = teclat.nextDouble();
+        
+        dinersRestants = dinersCartera-total;
+        
+        System.out.println("Et queden" + dinersRestants + "euros");
+             
+    }
+
+    private static class x {
+
+        public x() {
+        }
+    }
+
+    private static class PreuEntrada {
+
+        public PreuEntrada() {
+        }
