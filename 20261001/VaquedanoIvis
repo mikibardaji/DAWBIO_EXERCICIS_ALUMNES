@@ -1,0 +1,36 @@
+
+ *
+ * @author iva7943
+ */import java.util.Scanner;
+
+public class Exc2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }scanner sc = new Scanner(System.in);
+    double kelvin, celsius, fahrenheit;
+   final double KELVINCELIUS = 273.15;
+   
+   
+   System.ou/*t.println ("Que temperatura en kelvin nos encontramos EN kelvin:");
+           */
+   kelvin = sc.nextDouble();
+   
+   celsius = kelvin -KELVINCELSIUS;
+   fahrenheit = (celsius * 9 / 5) + 32;
+   
+   System.out.println("Celsius " + celsius);
+   System.ou.println("Fahrenheit: " + fahrenheit);
+
+    private static class scanner {
+
+        public scanner() {
+        }
+    }
+   
+   
+   
+    
