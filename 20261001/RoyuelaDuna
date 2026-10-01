@@ -1,1 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exgrados;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author dro3858
+ */
+public class ExGrados {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner teclat = new Scanner(System.in);
+        double Kelvin, Celsius, Farenheit;
+        final double KelvinACelsius = 273.15;
+        System.out.println("Que temperatura en Kelvin hace??");
+        Kelvin = teclat.nextDouble();
+        Celsius = Kelvin - KelvinACelsius;
+        Farenheit = (Celsius*9/5)+32;
+        System.out.println("En Celsius son" + Celsius);
+        System.out.println("En Farenheit son" + Farenheit);
+        
+    }
+    
+}
 
