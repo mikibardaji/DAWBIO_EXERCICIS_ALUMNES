@@ -5,7 +5,7 @@
 public class Mavenproject1 {
     public static void main(String[] args) {
     Scanner lector = new
-            Scanner (System.in);
+            Scanner (System.in); 
     System.out.println("quants diners tens?");
     double dinersCartera = lector.nextDouble();
     System.out.println("Quantes entrades has comprat?");
