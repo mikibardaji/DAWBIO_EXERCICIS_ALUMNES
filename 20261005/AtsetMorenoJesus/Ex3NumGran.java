@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Ex3NumGran {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line argumentss
      */
     public static void main(String[] args) {
         double num1,num2;
