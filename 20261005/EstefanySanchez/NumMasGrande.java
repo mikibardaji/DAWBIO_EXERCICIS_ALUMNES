@@ -15,7 +15,6 @@ public class NumMasGrande {
    //declaromos variables 
     int num1;
     int num2;
-    int masG;
     Scanner lector = new Scanner(System.in);
     
     
