@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package santamariamoralesdylanexercicisestructurescondicionals4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Dylan Santamaria
+ */
+public class SantamariaMoralesDylanExercicisEstructuresCondicionals4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // 4. Programa que llegeix un número i diu si és positiu, si és zero, o bé i és negatiu.
+        Scanner lector = new Scanner(System.in);
+        double numero;
+        
+        System.out.print("Introdueix un número: ");
+        numero = lector.nextDouble();
+        
+        if (numero > 0){
+            System.out.println("El número " + numero + " és positiu (+).");
+        }
+        else{
+            if (numero == 0){
+                System.out.println("El número és 0.");
+            }else{
+                System.out.println("El número " + numero + " és negatiu (-).");
+            }
+        }
+    }
+    
+}
