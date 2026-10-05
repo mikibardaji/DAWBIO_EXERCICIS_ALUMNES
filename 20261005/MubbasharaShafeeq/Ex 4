@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pkg4;
+import java.util.Scanner;
+
+/**
+ *
+ * @author mubba
+ */
+public class Ex4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        
+        System.out.print("Introdueix un número:");
+        double num = entrada.nextDouble();
+        
+        if (num >0){ 
+            System.out.print("És positiu");
+        }
+        else if (num == 0){
+            System.out.println("És zero");
+            
+        }
+        else {
+            System.out.println("És negatiu");
+            
+        }
+    }
+    
+}
