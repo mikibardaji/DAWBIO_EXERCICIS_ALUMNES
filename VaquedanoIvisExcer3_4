@@ -1,0 +1,111 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package excer3_4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author iva7943
+ */
+public class Excer3_4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // 
+        Scanner sc =new Scanner(System.in);
+                int numero1, numero2;
+                
+                
+                
+                 
+                
+                System.out.print("pedir el numero1: ");
+                numero1 = sc.nextInt();
+                
+                 System.out.print("pedir el numero2: ");
+                 numero2 = sc.nextInt();
+                 
+                 if (numero1 > numero2) {
+                     System.out.println("El numero mayor es: " + numero1);
+                 }  else  {
+                     System.out.println("El numero mayor es " + numero2);
+                     
+                 }
+                 
+    }
+    
+                     
+            
+
+}
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package execer4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author iva7943
+ */
+public class Execer4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //
+        Scanner sc =new Scanner(System.in);
+        
+        System.out.print("Pedir un numero: ");
+        int numero =sc.nextInt();
+        if ( numero > 0) {
+            System.out.println("El numero es positivo");
+        }else if (numero == 0) {
+            System.out.println("El numero es cero");
+        } else {
+            System.out.println("El numero es negativo");
+           
+            
+            
+        
+        
+        
+        
+                }  
+        
+    }
+    
+}
+
+
+
+
+                 
+                
+                     
+                     
+                     
+                     
+                 
+                   
+                    
+                   
+                    
+                
+                
+    
+    
+
+
+
