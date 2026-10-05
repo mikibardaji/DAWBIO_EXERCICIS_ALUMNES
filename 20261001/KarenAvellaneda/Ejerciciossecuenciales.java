@@ -103,6 +103,7 @@ public class Secuencial4 {
 }
 
 
+
 5.	Programa que, atès el preu nominal d'un article i el preu de venda real, ens mostri el percentatge de descompte realitzat.
 
   
