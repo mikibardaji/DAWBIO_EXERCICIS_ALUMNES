@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pkg8;
+import java.util.Scanner;
+
+/**
+ *
+ * @author mubba
+ */
+public class Ex8 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double nota1, nota2;
+        
+        Scanner teclat = new Scanner(System.in);
+
+        
+        System.out.println("Nota A1?");
+         nota1 = teclat.nextDouble();
+        
+        System.out.println("Nota A2?");
+         nota2 = teclat.nextDouble();
+        
+        if (nota1>=5 && nota2>= 5)
+            System.out.println("Has de ganar a segona convocatoria");
+        
+            System.out.println("Felicitat,modul superat ");
+           
+    }
+    
+}
