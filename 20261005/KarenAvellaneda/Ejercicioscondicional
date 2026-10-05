@@ -1,0 +1,153 @@
+
+3.	Programa que llegeix 2 números i en mostra el més gran.
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1;
+        double num2;
+
+        System.out.println("Introduce el primer número:");
+        num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo número:");
+        num2 = sc.nextDouble();
+
+        if (num1 >= num2) {
+            System.out.println("El número más grande es: " + num1);
+        } else {
+            System.out.println("El número más grande es: " + num2);
+        }
+
+        sc.close();
+    }
+}
+
+4.	Programa que llegeix un número i diu si és positiu, si és zero, o bé i és negatiu.
+
+import java.util.Scanner;
+
+public class Ejercicio4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double numero;
+
+        System.out.println("Introduce un número:");
+        numero = sc.nextDouble();
+
+        if (numero > 0) {
+            System.out.println("El número es positivo");
+        } else if (numero == 0) {
+            System.out.println("El número es cero");
+        } else {
+            System.out.println("El número es negativo");
+        }
+
+        sc.close();
+    }
+}
+
+5.	Programa que llegeix dos números i els visualitza en ordre ascendent.
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1;
+        double num2;
+
+        System.out.println("Introduce el primer número:");
+        num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo número:");
+        num2 = sc.nextDouble();
+
+        if (num1 >= num2) {
+            System.out.println(num2 + " <= " + num1);
+        } else {
+            System.out.println(num1 + " < " + num2);
+        }
+
+        sc.close();
+    }
+}
+
+
+6.	Programa que llegeix dos números i ens diu quin és el més gran o si són iguals.
+
+import java.util.Scanner;
+
+public class Ejercicio6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1;
+        double num2;
+
+        System.out.println("Introduce el primer número:");
+        num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo número:");
+        num2 = sc.nextDouble();
+
+        if (num1 > num2) {
+            System.out.println("El número más grande es: " + num1);
+        } else if (num2 > num1) {
+            System.out.println("El número más grande es: " + num2);
+        } else {
+            System.out.println("Los dos números son iguales");
+        }
+
+        sc.close();
+
+
+
+    }
+}
+
+
+7.	Programa que llegeix tres números diferents i ens diu quin és el més gran.
+
+
+import java.util.Scanner;
+
+public class Ejercicio7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1;
+        double num2;
+        double num3;
+
+        System.out.println("Introduce el primer número:");
+        num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo número:");
+        num2 = sc.nextDouble();
+
+        System.out.println("Introduce el tercer número:");
+        num3 = sc.nextDouble();
+
+        if (num1 > num2 && num1 > num3) {
+            System.out.println("El número más grande es: " + num1);
+        } else if (num2 > num3) {
+            System.out.println("El número más grande es: " + num2);
+        } else {
+            System.out.println("El número más grande es: " + num3);
+        }
+
+        sc.close();
+    }
+}
+
+
+
+
+
+
