@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pkg3;
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author mubba
+ */
+public class Ex3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner lector = new Scanner(System.in);
+        
+         System.out.println("Introdueix el primer número:");
+        int num1 = lector.nextInt();
+        
+        System.out.println("Introdueix el segon número:");
+        int num2 = lector.nextInt();
+        
+        
+        if (num1 > num2){
+            System.out.println("El número més gran és: " + num1);
+            
+        } else{
+            System.out.println("El número més gran és: " + num2);
+        }
+
+    }
+    
+}
