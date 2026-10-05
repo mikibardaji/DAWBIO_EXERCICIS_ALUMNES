@@ -1,0 +1,20 @@
+ 
+12.Desenvolupeu un programa que demani a l’usuari que introdueixi un preu en € i la quantitat de € que paga. El programa compararà les dues quantitats i escriurà els € que li falten per pagar o bé els que li han de tornar. Ex. Si l’usuari introdueix preu=102€ i paga=150€, el programa li dirà “Sobren 48€”. Si l’usuari introdueix preu=102€ i paga=100€, el programa li dirà “Falten 2€”. 
+
+13.Desenvolupem un ajudant infantil per decidir què fer davant un semàfor. El programa demanarà de quin color està el semàfor (V-verd/T-Taronja/Roig-Aturar) i segons la resposta recomanarà passar, esperar, o córrer. 
+
+14.Desenvolupeu un programa que entri un import en euros, mostri un menú amb diferents monedes, llegeixi el nom de la moneda i mostri la conversió a la moneda escollida. 
+
+15.Programa que calcula el salari net mensual d'un treballador en funció del nombre d'hores treballades i la taxa d'impostos d'acord amb les hipòtesis següents: 
+
+Les primeres 130 hores es paguen a tarifa normal (15,00 €/h). 
+
+Les hores que passin de 130 es paguen a 1,5 vegades la tarifa normal. 
+
+Les taxes d'impostos són: 
+
+Els 500 primers euros són lliures d'impostos. 
+
+Els 400 següents tenen un 25% d'impostos. 
+
+La resta un 45% d'impostos. Escriure nom, salari brut, taxes i salari net. 
