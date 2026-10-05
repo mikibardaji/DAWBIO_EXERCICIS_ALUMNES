@@ -17,3 +17,5 @@ Els exercicis que heu de fer per casa es son els següents
                           Esperando opción: ___
 
   I tu escrius b, t'haura de transformar els 10 euros a Libra.
+
+  ### **RECORDEU AL PUJAR ELS FITXERS AL GITHUB, FICAR AL MISSATGE DEL COMMIT, EL NOM D'AQUESTA CARPETA AAAAMMDD, EN AQUEST CAS 20261008**
