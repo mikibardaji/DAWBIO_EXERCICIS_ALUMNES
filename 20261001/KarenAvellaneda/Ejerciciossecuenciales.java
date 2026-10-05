@@ -1,90 +1,185 @@
-# ==========================================
-# EJERCICIO 1 - Saludar al usuario
-# ==========================================
+1.	Programa que pregunti el nom a l’usuari i doni el  “bon dia” indicant el nom.
 
-nombre = input("¿Cómo te llamas? ")
-print("Buenos días", nombre)
+import java.util.Scanner;
 
+public class Secuencial1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-# ==========================================
-# EJERCICIO 2 - Área de un cuadrado
-# Área = lado × lado
-# ==========================================
+        String nombre;
 
-lado = float(input("Introduce el lado del cuadrado: "))
+        System.out.println("¿Cómo te llamas?");
+        nombre = sc.nextLine();
 
-area = lado * lado
+        System.out.println("Bon dia, " + nombre);
 
-print("El área del cuadrado es:", area)
-
-
-# ==========================================
-# EJERCICIO 3 - Suma, resta, producto y división
-# ==========================================
-
-numero1 = float(input("Introduce el primer número: "))
-numero2 = float(input("Introduce el segundo número: "))
-
-suma = numero1 + numero2
-resta = numero1 - numero2
-producto = numero1 * numero2
-division = numero1 / numero2
-
-print("Suma:", suma)
-print("Resta:", resta)
-print("Producto:", producto)
-print("División:", division)
+        sc.close();
+    }
+}
 
 
-# ==========================================
-# EJERCICIO 4 - Circunferencia y área del círculo
-# Longitud = 2 × pi × radio
-# Área = pi × radio²
-# ==========================================
+2.	Programa que calcula l'àrea d'un quadrat el costat del qual s'introdueix per teclat.
 
-import math
+import java.util.Scanner;
 
-radio = float(input("Introduce el radio: "))
+public class Secuencial2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-longitud = 2 * math.pi * radio
-area = math.pi * radio ** 2
+        double lado;
+        double area;
 
-print("Longitud de la circunferencia:", longitud)
-print("Área del círculo:", area)
+        System.out.println("Introduce el lado del cuadrado:");
+        lado = sc.nextDouble();
 
+        area = lado * lado;
 
-# ==========================================
-# EJERCICIO 5 - Porcentaje de descuento
-# ==========================================
+        System.out.println("El área del cuadrado es: " + area);
 
-precio_nominal = float(input("Introduce el precio original: "))
-precio_venta = float(input("Introduce el precio de venta: "))
-
-descuento = precio_nominal - precio_venta
-porcentaje = (descuento / precio_nominal) * 100
-
-print("El porcentaje de descuento es:", porcentaje, "%")
+        sc.close();
+    }
+}
 
 
-# ==========================================
-# EJERCICIO 6 - Kelvin → Celsius → Fahrenheit
-# ==========================================
+3.	Programa que llegeixi dos números, calcula i mostra el valor de la suma, la resta, el producte i la divisió.
+  
 
-kelvin = float(input("Introduce la temperatura en Kelvin: "))
+import java.util.Scanner;
 
-celsius = kelvin - 273.15
-fahrenheit = (celsius * 9 / 5) + 32
+public class Secuencial3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-print("Temperatura en Celsius:", celsius)
-print("Temperatura en Fahrenheit:", fahrenheit)
+        double num1;
+        double num2;
+        double suma;
+        double resta;
+        double producto;
+        double division;
+
+        System.out.println("Introduce el primer número:");
+        num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo número (distinto de cero):");
+        num2 = sc.nextDouble();
+
+        suma = num1 + num2;
+        resta = num1 - num2;
+        producto = num1 * num2;
+        division = num1 / num2;
+
+        System.out.println("Suma: " + suma);
+        System.out.println("Resta: " + resta);
+        System.out.println("Producto: " + producto);
+        System.out.println("División: " + division);
+
+        sc.close();
+    }
+}
+
+4.	Programa que pren com a dada d'entrada un número que correspon a la longitud d'un radi i ens escriu la longitud de la circumferència, l'àrea del cercle.
+
+import java.util.Scanner;
+
+public class Secuencial4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double radio;
+        double longitud;
+        double area;
+
+        System.out.println("Introduce el radio:");
+        radio = sc.nextDouble();
+
+        longitud = 2 * Math.PI * radio;
+        area = Math.PI * radio * radio;
+
+        System.out.println("Longitud de la circunferencia: " + longitud);
+        System.out.println("Área del círculo: " + area);
+
+        sc.close();
+    }
+}
 
 
-# ==========================================
-# EJERCICIO 7 - Millas náuticas → metros
-# 1 milla náutica = 1852 metros
-# ==========================================
+5.	Programa que, atès el preu nominal d'un article i el preu de venda real, ens mostri el percentatge de descompte realitzat.
 
-millas = float(input("Introduce las millas náuticas: "))
+  
+import java.util.Scanner;
 
-metros = millas * 1852
-print("equivalente en metros;", metros);
+public class Secuencial5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double precioOriginal;
+        double precioFinal;
+        double porcentajeDescuento;
+
+        System.out.println("Introduce el precio original:");
+        precioOriginal = sc.nextDouble();
+
+        System.out.println("Introduce el precio final de venta:");
+        precioFinal = sc.nextDouble();
+
+        porcentajeDescuento =
+                (precioOriginal - precioFinal) / precioOriginal * 100;
+
+        System.out.println("El descuento es del "
+                + porcentajeDescuento + " %");
+
+        sc.close();
+    }
+}
+
+
+6.	Programa que llegeixi un valor corresponent a una temperatura en graus Kelvin i escriviu la temperatura en graus Celsius.  Despres que passi el Celsius a Farenheit (busqueu les formules a Google)
+
+
+import java.util.Scanner;
+
+public class Secuencial6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double kelvin;
+        double celsius;
+        double fahrenheit;
+
+        System.out.println("Introduce la temperatura en Kelvin:");
+        kelvin = sc.nextDouble();
+
+        celsius = kelvin - 273.15;
+        fahrenheit = celsius * 9.0 / 5.0 + 32;
+
+        System.out.println("Temperatura en Celsius: " + celsius);
+        System.out.println("Temperatura en Fahrenheit: " + fahrenheit);
+
+        sc.close();
+    }
+}
+
+
+7.	Programa que transforma las milles nàutiques a metres.
+
+import java.util.Scanner;
+
+public class Secuencial7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double millas;
+        double metros;
+
+        System.out.println("Introduce las millas náuticas:");
+        millas = sc.nextDouble();
+
+        metros = millas * 1852;
+
+        System.out.println("Equivalen a " + metros + " metros");
+
+        sc.close();
+    }
+}
+
+
