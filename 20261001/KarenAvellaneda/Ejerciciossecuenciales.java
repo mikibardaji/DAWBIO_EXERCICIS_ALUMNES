@@ -18,6 +18,7 @@ public class Secuencial1 {
 }
 
 
+
 2.	Programa que calcula l'àrea d'un quadrat el costat del qual s'introdueix per teclat.
 
 import java.util.Scanner;
