@@ -15,35 +15,32 @@ public class Cond13 {
      */
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
-        double euros, sortida;
-        sortida = 0;
-        String divisa;
-        final double ARS_CONV, DOLARS_CONV, LIBRAS_CONV, BITCOIN_CONV;
-        ARS_CONV = 1711.98;
-        DOLARS_CONV = 1.13;
-        LIBRAS_CONV = 0.85;
-        BITCOIN_CONV = 0.000013;
-        System.out.print("Digues una quantitat en euros: ");
-        euros = lector.nextDouble();
-        System.out.print("Ara digues una divisa: 'ARS','Dolars','Libras','Bitcoin' ");
-        divisa = lector.next();
-        switch (divisa) {
-            case "ARS":
-                sortida = euros*ARS_CONV;
-                break;
-            case "Dolars":
-                sortida = euros*DOLARS_CONV;
-                break;
-            case "Libras":
-                sortida = euros*LIBRAS_CONV;
-                break;
-            case "Bitcoin":
-                sortida = euros*BITCOIN_CONV;
-                break;
-            default:
-                System.out.print("Introdueix una divisa de les opcions si us plau.");
+        double horesTreball, horesExtra, pagaBruta, pagaNeta, paga25, paga45;
+        final double PAGA_HORA = 15;
+        final double HORES_NORMALS = 130;
+        final double TARIFA_PAGA_EXTRA = 1.5;
+        System.out.print("Digues les hores treballades: ");
+        horesTreball = lector.nextDouble();
+        horesExtra = horesTreball - HORES_NORMALS;
+        pagaBruta = ((horesTreball + horesExtra*TARIFA_PAGA_EXTRA) * PAGA_HORA);
+        if (pagaBruta>500) {
+            paga25 = pagaBruta - 500;
+            if (pagaBruta>900) {
+                paga25 = 400;
+                paga45 = pagaBruta - 900;
+            } else { 
+                paga45 = 0;
+            }    
+        } else {
+            paga25 = 0;
+            paga45 = 0;
         }
-        System.out.print("Els teus "+ euros + " euros equivalen a " + sortida + divisa +" !!");
+
+        pagaNeta = (pagaBruta-paga25-paga45) + paga25*0.75 + paga45*0.55;
+        
+        System.out.println("El teu sou brut es: " +pagaBruta+" euros." );
+        System.out.println("El teu sou sou es: " +pagaNeta+" euros." );
+        System.out.println("T'han cobrat de taxes " + (paga25*0.25+paga45*0.45)+" euros." );
 
         // TODO code application logic here
     }
