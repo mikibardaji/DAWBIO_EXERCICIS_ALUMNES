@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package semaforo;
+
 import java.util.Scanner;
+
 /**
  *
  * @author diego90895
@@ -14,24 +16,27 @@ public class semaforo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner lector = new Scanner(System.in);
-        System.out.print("De quin color esta el semafor? V-verd/T-Taronja/R-Roig: ");
-        char Resposta = lector.next().charAt(0);
+        System.out.print("De quin color està el semàfor? V-Verd / T-Taronja / R-Roig: ");
         
-        switch (Resposta) {
+        // Llegim el caràcter i el passem a majúscules per evitar problemes
+        char resposta = Character.toUpperCase(lector.next().charAt(0));
+        
+        switch (resposta) {
             case 'V':
-                System.out.println("passar");
+                System.out.println("Passar");
                 break;
             case 'T':
-                System.out.println("c�rrer");
+                System.out.println("Córrer (o frenar amb precaució)");
                 break;
             case 'R':
-                System.out.println("esperar");
+                System.out.println("Esperar");
                 break;
             default:
-                throw new AssertionError();
+                System.out.println("Opció no vàlida. Si us plau, tria V, T o R.");
+                break;
         }
+        
+        lector.close(); // Bona pràctica tancar el scanner
     }
-    
 }
