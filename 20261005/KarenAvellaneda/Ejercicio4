@@ -1,0 +1,24 @@
+4.	Programa que llegeix un número i diu si és positiu, si és zero, o bé i és negatiu.
+
+import java.util.Scanner;
+
+public class Ejercicio4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double numero;
+
+        System.out.println("Introduce un número:");
+        numero = sc.nextDouble();
+
+        if (numero > 0) {
+            System.out.println("El número es positivo");
+        } else if (numero == 0) {
+            System.out.println("El número es cero");
+        } else {
+            System.out.println("El número es negativo");
+        }
+
+        sc.close();
+    }
+}
