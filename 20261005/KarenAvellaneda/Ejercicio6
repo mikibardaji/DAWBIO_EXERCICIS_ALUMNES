@@ -1,0 +1,31 @@
+6.	Programa que llegeix dos números i ens diu quin és el més gran o si són iguals.
+
+import java.util.Scanner;
+
+public class Ejercicio6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1;
+        double num2;
+
+        System.out.println("Introduce el primer número:");
+        num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo número:");
+        num2 = sc.nextDouble();
+
+        if (num1 > num2) {
+            System.out.println("El número más grande es: " + num1);
+        } else if (num2 > num1) {
+            System.out.println("El número más grande es: " + num2);
+        } else {
+            System.out.println("Los dos números son iguales");
+        }
+
+        sc.close();
+
+
+
+    }
+}
