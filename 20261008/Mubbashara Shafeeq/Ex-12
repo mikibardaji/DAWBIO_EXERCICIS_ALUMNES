@@ -1,0 +1,50 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pkg12;
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author mubba
+ */
+public class Ex12 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner lector = new Scanner(System.in);
+
+
+
+        System.out.print("Introdueix el preu: ");
+
+        double preu = lector.nextDouble();
+
+
+
+        System.out.print("Introdueix la quantitat pagada: ");
+
+        double paga = lector.nextDouble();
+
+
+
+        if (paga > preu) {
+
+            System.out.println("Sobren " + (paga - preu) + "€");
+
+        } else if (paga < preu) {
+
+            System.out.println("Falten " + (preu - paga) + "€");
+
+        } else {
+
+            System.out.println("Import exacte");
+
+        }
+    }
+    
+}
