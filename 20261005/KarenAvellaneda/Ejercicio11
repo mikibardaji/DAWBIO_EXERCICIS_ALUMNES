@@ -1,0 +1,43 @@
+
+import java.util.Scanner;
+
+public class Ejercicio11 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Nombre del trabajador: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Horas trabajadas: ");
+        double horas = sc.nextDouble();
+
+        double bruto;
+        double impuestos;
+        double neto;
+
+        if (horas <= 130) {
+            bruto = horas * 15;
+        } else {
+            bruto = 130 * 15 + (horas - 130) * 22.5;
+        }
+
+        if (bruto <= 500) {
+            impuestos = 0;
+        } else if (bruto <= 900) {
+            impuestos = (bruto - 500) * 0.25;
+        } else {
+            impuestos = 400 * 0.25 + (bruto - 900) * 0.45;
+        }
+
+        neto = bruto - impuestos;
+
+        System.out.println("Trabajador: " + nombre);
+        System.out.printf("Salario bruto: %.2f euros%n", bruto);
+        System.out.printf("Impuestos: %.2f euros%n", impuestos);
+        System.out.printf("Salario neto: %.2f euros%n", neto);
+
+        sc.close();
+    }
+}
+
