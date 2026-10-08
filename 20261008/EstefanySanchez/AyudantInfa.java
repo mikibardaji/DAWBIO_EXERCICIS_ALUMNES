@@ -40,7 +40,7 @@ public class AyudantInfa {
                 System.out.println("Color no valido.");
         }
 
-        
+        // tambien puedo usar un if, else if y else
         }
     }
 
