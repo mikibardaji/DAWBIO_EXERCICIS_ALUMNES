@@ -1,0 +1,26 @@
+3.	Programa que llegeix 2 números i en mostra el més gran.
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1;
+        double num2;
+
+        System.out.println("Introduce el primer número:");
+        num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo número:");
+        num2 = sc.nextDouble();
+
+        if (num1 >= num2) {
+            System.out.println("El número más grande es: " + num1);
+        } else {
+            System.out.println("El número más grande es: " + num2);
+        }
+
+        sc.close();
+    }
+}
