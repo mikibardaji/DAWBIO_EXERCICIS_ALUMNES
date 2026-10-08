@@ -37,6 +37,7 @@ public class Ex14ConversionDinero {
                 break;
             case 'C':
                 System.out.println("El valor en yen es: " + yen + " yenes");
+                break;
             default:
                 System.out.println("Entrada incorrecta");
         }
