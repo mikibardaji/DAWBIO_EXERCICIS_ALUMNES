@@ -1,0 +1,86 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pkg14;
+import java.util.Scanner;
+
+/**
+ *
+ * @author mubba
+ */
+public class Ex14 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner lector = new Scanner(System.in);
+
+
+
+        System.out.print("Introdueix una quantitat en euros: ");
+
+        double euros = lector.nextDouble();
+
+
+
+        System.out.println("Monedes disponibles:");
+
+        System.out.println("dolar");
+
+        System.out.println("lliura");
+
+        System.out.println("ien");
+
+
+
+        System.out.print("Escull una moneda: ");
+
+        String moneda = lector.next();
+
+
+
+        if (moneda.equalsIgnoreCase("dolar")) {
+
+
+
+            double resultat = euros * 1.08;
+
+            System.out.println("Conversió: " + resultat + " dòlars");
+
+
+
+        } else if (moneda.equalsIgnoreCase("lliura")) {
+
+
+
+            double resultat = euros * 0.86;
+
+            System.out.println("Conversió: " + resultat + " lliures");
+
+
+
+        } else if (moneda.equalsIgnoreCase("ien")) {
+
+
+
+            double resultat = euros * 170;
+
+            System.out.println("Conversió: " + resultat + " iens");
+
+
+
+        } else {
+
+
+
+            System.out.println("Moneda no vàlida");
+
+
+
+        }
+        
+    }
+    
+}
