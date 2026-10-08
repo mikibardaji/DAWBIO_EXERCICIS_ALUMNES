@@ -17,6 +17,20 @@ public class PrecioCant {
      * Ej. Si el usuario introduce precio=102€ y paga=150€, el programa le dirá “Sobren 48€”.
      * Si el usuario introduce precio=102€ y paga=100€, 
      * el programa le dirá “Falten 2€”.
+
+         Pseudocodigo:
+     * entradas: preguntamos
+     * introduce el precio
+     * esperamos
+     * 
+     * introduc el pago
+     * esperamos
+     * 
+     * calculo
+     * if , else if, else
+
+
+     
      */
     public static void main(String[] args) {
         // DECLARAMOS VARIABLES 
