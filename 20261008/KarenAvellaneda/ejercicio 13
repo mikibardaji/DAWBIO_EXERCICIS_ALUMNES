@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Ejercicio13 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Color del semáforo (V/T/R): ");
+        char color = teclado.nextLine().toUpperCase().charAt(0);
+
+        if (color == 'V') {
+            System.out.println("Puedes pasar");
+        } else if (color == 'T') {
+            System.out.println("Espera");
+        } else if (color == 'R') {
+            System.out.println("Párate");
+        } else {
+            System.out.println("Opción incorrecta");
+        }
+
+        teclado.close();
+    }
+}
+
+
