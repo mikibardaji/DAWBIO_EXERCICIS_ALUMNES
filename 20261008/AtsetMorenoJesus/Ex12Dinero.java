@@ -27,7 +27,7 @@ public class ExDinero {
         if(precio < pago){
             System.out.println("Te deben: "+ vuelta);
         }
-        if(precio > pago){
+        else if(precio > pago){
             System.out.println("Debes: "+ debes);
         }
         else {
