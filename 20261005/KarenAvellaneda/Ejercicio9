@@ -1,0 +1,39 @@
+9.	Programa que llegeix una qualificació numèrica decimal x entre 0 i 10 i la transforma en qualificació alfabètica, escrivint-ne el resultat.
+•	0<=x<3 Molt Deficient
+•	3<=x<5 Insuficient
+•	5<=x<6 Suficient
+•	6<=x<7 Bé
+•	7<=x<9 Notable
+•	9<=x<=10 Excel·lent
+
+
+import java.util.Scanner;
+
+public class ejercicio9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double nota;
+
+        System.out.println("Introduce una nota entre 0 y 10:");
+        nota = sc.nextDouble();
+
+        if (nota < 0 || nota > 10) {
+            System.out.println("Nota incorrecta: debe estar entre 0 y 10.");
+        } else if (nota < 3) {
+            System.out.println("Molt Deficient");
+        } else if (nota < 5) {
+            System.out.println("Insuficient");
+        } else if (nota < 6) {
+            System.out.println("Suficient");
+        } else if (nota < 7) {
+            System.out.println("Bé");
+        } else if (nota < 9) {
+            System.out.println("Notable");
+        } else {
+            System.out.println("Excel·lent");
+        }
+
+        sc.close();
+    }
+}
