@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Ejercicio10 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Introduce la hora: ");
+        int hora = sc.nextInt();
+
+        System.out.print("Introduce los minutos: ");
+        int minutos = sc.nextInt();
+
+        System.out.print("Introduce los segundos: ");
+        int segundos = sc.nextInt();
+
+        System.out.print("Segundos que quieres sumar: ");
+        int tiempo = sc.nextInt();
+
+        int total = hora * 3600 + minutos * 60 + segundos + tiempo;
+
+        int nuevaHora = (total / 3600) % 24;
+        int nuevosMinutos = (total % 3600) / 60;
+        int nuevosSegundos = total % 60;
+
+        System.out.printf("Nueva hora: %02d:%02d:%02d%n",
+                nuevaHora, nuevosMinutos, nuevosSegundos);
+
+        sc.close();
+    }
+}
+
