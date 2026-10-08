@@ -1,0 +1,27 @@
+8.	Programa que demani dues notes d’una assigantura (amb decimals). Si alguna de les dues es mes petita que 5 ha de sortir el text «Has d’anar a segona convocatoria». Si no ha de dir «Felicitats, modul superat»
+
+
+import java.util.Scanner;
+
+public class ejercicio8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double nota1;
+        double nota2;
+
+        System.out.println("Introduce la primera nota:");
+        nota1 = sc.nextDouble();
+
+        System.out.println("Introduce la segunda nota:");
+        nota2 = sc.nextDouble();
+
+        if (nota1 < 5 || nota2 < 5) {
+            System.out.println("Has d'anar a segona convocatòria");
+        } else {
+            System.out.println("Felicitats, mòdul superat");
+        }
+
+        sc.close();
+    }
+}
