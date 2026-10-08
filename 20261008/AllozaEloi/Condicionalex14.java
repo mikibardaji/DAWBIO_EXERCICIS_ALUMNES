@@ -24,9 +24,9 @@ public class Condicionalex14 {
 
         System.out.println("\n--- MENU DE MONEDES ---");
         System.out.println("1. Dòlars (USD)");
-        System.out.println("2. Lliures (GBP)");
-        System.out.println("3. Iens (JPY)");
-        System.out.println("4. Francs suïssos (CHF)");
+        System.out.println("2. Iens (JPY)");
+        System.out.println("3. Yuans (CNY)");
+        System.out.println("4. Rublos (RUB)");
 
         System.out.print("Escull una moneda: ");
         int opcio = lector.nextInt();
