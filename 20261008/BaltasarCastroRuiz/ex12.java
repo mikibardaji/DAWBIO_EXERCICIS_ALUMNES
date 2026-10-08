@@ -5,7 +5,7 @@
 package prueba;
 
 import java.util.Scanner;
-
+   
 /**
  *
  * @author bca5802
