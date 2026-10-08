@@ -24,13 +24,13 @@ public class Semafor {
                 System.out.println("passar");
                 break;
             case 'T':
-                System.out.println("córrer");
+                System.out.println("cÃ³rrer");
                 break;
             case 'R':
                 System.out.println("esperar");
                 break;
             default:
-                throw new AssertionError();
+                System.out.println("Error");
         }
     }
     
