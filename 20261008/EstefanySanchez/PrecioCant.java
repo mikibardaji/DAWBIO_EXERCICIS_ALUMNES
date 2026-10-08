@@ -25,8 +25,15 @@ public class PrecioCant {
         double paga;
         
         //escribimos
+        //escribimos
+        
+        
+        
         System.out.println("Introduce el precio: ");
         precio = teclado.nextDouble();
+        System.out.println("a - Dolar");
+        System.out.println("b - Libra");
+        System.out.println("c - Yen");
       
         System.out.println("Introduce el pago: ");
         paga = teclado.nextDouble();
@@ -44,6 +51,8 @@ public class PrecioCant {
             System.out.println("Faltan" + faltan + " €");
         }else{
             System.out.println("No sobra ni falta dinero: ");
+        
+        //SE PUEDE USAR SWITCH
         }
     }
 }
