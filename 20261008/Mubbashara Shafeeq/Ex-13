@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pkg13;
+import java.util.Scanner;
+
+/**
+ *
+ * @author mubba
+ */
+public class Ex13 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner lector = new Scanner(System.in);
+
+
+
+        System.out.print("Color del semàfor (V/T/R): ");
+
+        char color = lector.next().toUpperCase().charAt(0);
+
+
+
+        if (color == 'V') {
+
+            System.out.println("Pots passar");
+
+        } else if (color == 'T') {
+
+            System.out.println("Espera");
+
+        } else if (color == 'R') {
+
+            System.out.println("Atura't");
+
+        } else {
+
+            System.out.println("Color incorrecte");
+
+        }
+    }
+    
+}
