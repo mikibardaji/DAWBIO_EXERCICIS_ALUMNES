@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Ejercicio14 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("¿Cuántos euros tienes? ");
+        double euros = teclado.nextDouble();
+        teclado.nextLine();
+
+        System.out.println("a - Dólar");
+        System.out.println("b - Libra");
+        System.out.println("c - Yen");
+        System.out.print("Esperando opción: ");
+
+        char opcion = teclado.nextLine().toLowerCase().charAt(0);
+
+        double resultado;
+
+        switch (opcion) {
+            case 'a':
+                resultado = euros * 1.10;
+                System.out.println("Dólares: " + resultado);
+                break;
+
+            case 'b':
+                resultado = euros * 0.85;
+                System.out.println("Libras: " + resultado);
+                break;
+
+            case 'c':
+                resultado = euros * 160;
+                System.out.println("Yenes: " + resultado);
+                break;
+
+            default:
+                System.out.println("Opción incorrecta");
+        }
+
+        teclado.close();
+    }
+}
+
