@@ -20,7 +20,7 @@ public class Random5 {
         Scanner lector = new Scanner(System.in);
         int dau1 = aleatori.nextInt(1,7);
         int dau2 = aleatori.nextInt(1,7);
-        System.out.println("Ara llançare dos daus de 6 cares. Si la suma es mayor a 7 duplicaràs lo apostat." ) ;
+        System.out.println("Ara llançare dos daus de 6 cares. Si la suma es mayor o igual a 7 duplicaràs lo apostat." ) ;
         System.out.println("Quants euros vols apostar?: ");
         double apostat = lector.nextDouble();
         if (apostat>0) {
