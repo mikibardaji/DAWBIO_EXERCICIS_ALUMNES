@@ -24,7 +24,7 @@ public class Ex6Aleatorios {
 
         int eleccioAleatoriaPC = rd.nextInt(0, 3);
         
-        String manoUsuario = "Opcón no válida, elige:(0) Piedra, (1) Papel o (2) Tijeras";
+        String manoUsuario = "";
         String manoPC;
         
         if (eleccionUsuario == 0) {
@@ -47,7 +47,7 @@ public class Ex6Aleatorios {
         System.out.println("El ordenador ha sacado: " + manoPC);
         
         if (eleccionUsuario > 2 || eleccionUsuario < 0) {
-            System.out.println(manoUsuario);
+            System.out.println("Opción no válida");
         } else if (eleccionUsuario == 0 && eleccioAleatoriaPC == 2 
                 || eleccionUsuario == 1 && eleccioAleatoriaPC == 0
                 || eleccionUsuario == 2 && eleccioAleatoriaPC == 1) {
