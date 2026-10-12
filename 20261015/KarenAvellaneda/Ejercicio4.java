@@ -1,21 +1,20 @@
 import java.util.Random;
 
-public class Ejercicio4 {
+public class ejercicio4 {
     public static void main(String[] args) {
 
         Random aleatorio = new Random();
 
-        // Genera un número entre 1 i 6
-        int dau = aleatorio.nextInt(6) + 1;
+        int dado = aleatorio.nextInt(6) + 1;
 
-        System.out.println("Ha sortit: " + dau);
+        System.out.println("Ha salido: " + dado);
 
-        if (dau == 6) {
-            System.out.println("Has tret un 6!");
-        } else if (dau == 1) {
-            System.out.println("Quina mala sort!");
+        if (dado == 6) {
+            System.out.println("¡Has sacado un 6!");
+        } else if (dado == 1) {
+            System.out.println("¡Qué mala suerte!");
         } else {
-            System.out.println("Resultat normal");
+            System.out.println("Resultado normal");
         }
     }
 }
