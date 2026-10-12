@@ -1,24 +1,23 @@
-
 import java.util.Scanner;
 import java.util.Random;
 
-public class Ejercicio1 {
+public class ejercicio1 {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         Random aleatorio = new Random();
 
-        // Genera un número entre 1 y 10.
-        int numeroSecreto = aleatorio.nextInt(10) + 1;
+        int numero = aleatorio.nextInt(10) + 1;
 
-        System.out.print("Introduce un número entre 1 y 10: ");
-        int numeroUsuario = sc.nextInt();
+        System.out.println("Introduce un número entre 1 y 10:");
+        int respuesta = sc.nextInt();
 
-        if (numeroUsuario == numeroSecreto) {
-            System.out.println("Has encertat!");
-        } else if (numeroUsuario > numeroSecreto) {
-            System.out.println("T'has passat!");
+        if (respuesta == numero) {
+            System.out.println("¡Has acertado!");
+        } else if (respuesta > numero) {
+            System.out.println("¡Te has pasado!");
         } else {
-            System.out.println("El número és més gran!");
+            System.out.println("¡El número es más grande!");
         }
 
         sc.close();
