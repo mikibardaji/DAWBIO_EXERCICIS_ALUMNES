@@ -10,20 +10,20 @@ public class ejercicio5 {
         System.out.println("¿Cuántos euros quieres apostar?");
         double apuesta = sc.nextDouble();
 
-        // Primera tirada de los dos dados
         int dado1 = aleatorio.nextInt(6) + 1;
         int dado2 = aleatorio.nextInt(6) + 1;
 
         System.out.println("Primer dado: " + dado1);
         System.out.println("Segundo dado: " + dado2);
 
-        if (dado1 + dado2 == 7) {
+        int suma = dado1 + dado2;
+
+        if (suma == 7) {
             System.out.println("¡Bravo! Has ganado " + apuesta + " euros");
 
         } else if (dado1 == dado2) {
-            System.out.println("¡Ha salido un doble! Tiramos otra vez.");
+            System.out.println("Ha salido un doble. Tiramos otra vez.");
 
-            // Segunda tirada
             dado1 = aleatorio.nextInt(6) + 1;
             dado2 = aleatorio.nextInt(6) + 1;
 
@@ -31,11 +31,13 @@ public class ejercicio5 {
             System.out.println("Segundo dado: " + dado2);
 
             if (dado1 == dado2) {
+                double premio = apuesta * 3;
                 System.out.println("¡COMBO! Triplicas las ganancias, has ganado "
-                        + (apuesta * 3) + " euros");
+                        + premio + " euros");
             } else {
+                double premio = apuesta * 2;
                 System.out.println("Has doblado el valor: ganas "
-                        + (apuesta * 2) + " euros");
+                        + premio + " euros");
             }
 
         } else {
