@@ -20,26 +20,34 @@ public class AdivinaNum {
     Ayuda: Para probarlo, primero haz que muestre el valor aleatorio, 
     para poder fallar o acertar cuanto quieras, después cuando 
     ya funcione, quita el chivato.
-    * 
-    * 
-    * 
-    * 
-    * 
-    * 
+    *
     * 
      */
     public static void main(String[] args) {
-        // 
-        Random aleatori = new Random();
-        int numAl = aleatori.nextInt(1,11);
+        //Declaramos variables
+        //Llamamos a Random
+       Scanner lector = new Scanner(System.in);
+       int num ;
+       int user;
+       
+       //generar numero aleatorio entre 1 y 10
+       Random ran = new Random();//crear un objeto aleatorio
+       num = ran.nextInt(1, 11);//
+       //System.out.println("Numero generado: " + num);// prueba
+       
+       System.out.println("Escribe un numero");
+       user = lector.nextInt();
+       
+       //else else if
+       if(num == user) {
+           System.out.println("¡Has acertado");
+       }else if(num > user){
+           System.out.println("Te has pasado");
+       }else if(num < user){
+           System.out.println("El numero es mayor");
+           
+       }
         
-        System.out.println("Numero aleatorio entre el 1 y 10: " + numAl);
-    
-    
-    
-    
-    
-    
     }
     
 }
