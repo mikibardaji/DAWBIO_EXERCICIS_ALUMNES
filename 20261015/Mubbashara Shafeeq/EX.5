@@ -1,0 +1,50 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pkg5.random;
+import java.util.Random;
+
+/**
+ *
+ * @author mubba
+ */
+public class EX5RANDOM {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Random r = new Random();
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Quants diners vols apostar? ");
+        
+        int aposta = sc.nextInt();
+        int dau1 = r.nextInt(6) + 1;
+        int dau2 = r.nextInt(6) + 1;
+ 
+if(dau1 + dau2 == 7){
+    System.out.println("Bravo! Has guanyat " + aposta + " euros");
+ 
+}else if(dau1 == dau2){
+    dau1 = r.nextInt(6) + 1;
+    dau2 = r.nextInt(6) + 1;
+ 
+if(dau1 == dau2){
+    
+    System.out.println("COMBO! Tripliques ganancies, has guanyat " + aposta * 3 + " euros");
+
+}else{
+    
+    System.out.println("Has doblat el valor: guanyes " + aposta * 2 + " euros");
+ 
+}
+ 
+}else{
+    
+    System.out.println("Has perdut la aposta");
+}
+    }
+}
