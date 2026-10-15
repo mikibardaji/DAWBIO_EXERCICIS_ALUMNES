@@ -1,0 +1,25 @@
+import java.util.Random;
+
+public class Ex6R {
+  
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+Random rd = new Random();
+public static void main(String[] args) {
+
+System.out.println("0:Pedra, 1:Paper o 2:Tisora?");
+
+System.out.println("Has triat” +usuari");
+
+System.out.println("L’ordinador ha triat"+);
+
+System.out.println("Resultat: ");
+
+if (num1+num2==7)
+ System.out.println("Bravo! Has guanyat X euros");
+else if (num1==num2)
+
+
+    }
+    
+}
