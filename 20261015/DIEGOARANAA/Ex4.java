@@ -16,7 +16,7 @@ public class Ex4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Lanzamiento de un dado
+        
         Random aleatori = new Random();
         int dado = aleatori.nextInt(1,7);
         System.out.println("Y el dado saca..");
