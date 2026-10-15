@@ -1,0 +1,22 @@
+import java.util.Random;
+
+public class Ex5R {
+  
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+Random rd = new Random();
+public static void main(String[] args) {
+int num1 = rd.nextInt(6) +1; 
+int num2 = rd.nextInt(6) +1;
+
+System.out.println("Quants euros vols apostar?");
+int apostat = sc.nextInt();
+
+if (num1+num2==7)
+ System.out.println("Bravo! Has guanyat X euros");
+else if (num1==num2)
+
+
+    }
+    
+}
