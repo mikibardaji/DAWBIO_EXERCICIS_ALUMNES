@@ -1,0 +1,6 @@
+# PUJAR EXERCICIS CODIFICATS A JAVA
+
+
+El primer cop creeu la carpeta amb el vostre nom... i pugeu el primer exercici resolt... 
+
+Els altres exercicis, a mesura que els tinguis els vas pujant...
