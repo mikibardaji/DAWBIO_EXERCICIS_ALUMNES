@@ -22,19 +22,25 @@ public class Ex6 {
         */
         
         Scanner sc = new Scanner(System.in);
+       
+        boolean hayNegativo = false;
         int valores;
         
-        do {
-        
-        System.out.print("Dime 10 valores de tensón arterial: ");
-        valores = sc.nextInt();
-        
-        } while(valores < 10);
-        
-        if (valores < 0) {
-            System.out.println("Estos han sido los valores en negativo: " + valores);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Introduce 10 valores de tensión arterial");
+            valores = sc.nextInt();
+            
+            if (valores < 0) {
+                hayNegativo = true;
+            }
+        }
+        if (hayNegativo) {
+            System.out.println("Hay algún número negativo.");
+        } else {
+            System.out.println("Todos los números son positivos");
         }
         
     }
     
 }
+
