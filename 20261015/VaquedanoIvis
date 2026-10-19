@@ -1,0 +1,5 @@
+
+        1.	Escriu un programa que mostri per pantalla els números del 1 al 10, representant el recompte de glòbuls vermells analitzats per un microscopi.
+        for (int globul = 1; globul<= 10; globul++) {
+            System.out.println(globul+ ".-Mostrand globul: " + globul);
+            
