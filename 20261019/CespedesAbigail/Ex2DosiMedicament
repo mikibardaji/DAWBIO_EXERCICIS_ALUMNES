@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex2dosimedicament;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ace6601
+ */
+public class Ex2DosiMedicament {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner scan = new Scanner(System.in);
+        int dosis;
+
+        System.out.println("quantes dosis necessites");
+        dosis = scan.nextInt();
+
+        int contador = 0;
+
+        
+        while (contador < dosis) {
+            contador++;
+            int falten = dosis - contador; 
+            System.out.println("Dosis administrada t'en falten " + falten);
+        }
+
+        System.out.println("Ja estas curat!!!");
+
+        
+    }
+
+}
