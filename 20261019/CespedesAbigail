@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex1_19.pkg10.pkg26.comptadorglobuls;
+import java.util.Scanner;
+/**
+ *Escriu un programa que mostri per pantalla els números del 1 al 10, representant el recompte de glòbuls vermells analitzats per un microscopi.
+ * @author ace6601
+ */
+public class Ex1_191026ComptadorGlobuls {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for(int i = 0 ; i<10 ; i++){
+            System.out.println("Mostrant globul "+(i+1));
+            
+            
+        }
+        
+               
+        
+    }
+    
+}
