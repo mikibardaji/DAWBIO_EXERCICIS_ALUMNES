@@ -19,8 +19,7 @@ public class DSMExIteratives3 {
         // 3. Programa que entra un número natural N i mostra els números parells compresos entre 1 i N. Per fer-ho utilitzeu un comptador i suma de 2 en 2.
         Scanner lector = new Scanner(System.in);
         int num;
-        int sumador = 2;
-        
+                
         System.out.println("Anem a mostrar tots els nombres parells entre el 1 i el que em diguis!");
         System.out.print("Fins a quin numero vols?");
         num = lector.nextInt();
