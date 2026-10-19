@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package javaapplication11;
-import java.util.Scanner;
+
 
 /**
  *
@@ -16,12 +16,12 @@ public class JavaApplication11 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner scan = new Scanner(System.in);
+        
         int num;
         
          for(int i=0; i<10;i++){
-            System.out.print(i+"Mostrant glòbul:");
-            num = scan.nextInt();   
+            System.out.print(i+"Mostrant glòbul + i:");
+           
             
     }
     }
