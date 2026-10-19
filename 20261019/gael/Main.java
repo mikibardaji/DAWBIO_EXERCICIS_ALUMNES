@@ -2,8 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package pkg1_n;
-import java.util.Scanner;
+package pkg1_10;
+
 /**
  *
  * @author gga2951
@@ -15,16 +15,11 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int N;
-        Scanner lector = new Scanner(System.in);
-        System.out.println("Diguem un número: ");
-        N = lector.nextInt();
-        
-        for(int i=1;i<=N;i++){
-            if(i%2==0){
-                System.out.println("numero "+i);
-            }
+        System.out.println("Preparant quirofan");
+        for(int i=11;i>1;i--){
+            
+            System.out.println((i-1));
+        }
+        System.out.println("Inici de la intervenció");
         }
     }
-    
-}
