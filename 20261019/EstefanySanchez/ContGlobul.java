@@ -24,7 +24,7 @@ public class ContGlobul {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    Scanner lec = new Scanner(System.in);
+   
     int num = 11;
     
     System.out.println("-------CONTADOR DE GLOBULOS-------");
@@ -32,7 +32,7 @@ public class ContGlobul {
     for(int i = 1; i < num; i++)
         System.out.println("Globulo : "+ i);
         
-        num = lec.nextInt();
+        
     }  
         
         
