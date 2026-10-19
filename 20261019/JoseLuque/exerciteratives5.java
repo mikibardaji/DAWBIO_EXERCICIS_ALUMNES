@@ -32,8 +32,9 @@ public class ExercIteratives5 {
     }
     if(critic>1){
         System.out.println("Hi ha un valor critic");
-    }
+    } else {
         System.out.println("No hi ha cap valor critic");
+    }
     }
     
 }
