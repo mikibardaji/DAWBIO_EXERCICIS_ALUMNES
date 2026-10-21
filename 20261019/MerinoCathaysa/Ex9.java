@@ -36,9 +36,6 @@ public class Ex9 {
         suma = suma / 5;
         System.out.println("La media es: " + suma);
         
-//        for (int i = 1; i < 5; i++) {
-//            System.out.println("Introduce pulsaciones por minutos: " + i + ": " + pulsaciones);
-//        }
         
     }
     
