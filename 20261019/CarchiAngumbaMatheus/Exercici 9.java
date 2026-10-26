@@ -26,7 +26,7 @@ public class Bucles {
             totalBatecs += batecsMinut;    
             min ++;
         }
-        System.out.println("Mitjana = "+ (totalBatecs/(min-1)));
+        System.out.println("Mitjana de pulsacions = "+ (totalBatecs/(min-1)));
         
         }
         
