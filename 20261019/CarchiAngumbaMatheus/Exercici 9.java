@@ -16,25 +16,19 @@ public class Bucles {
      */
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
-        float batecsMinut = 0;
+        Random aleatori = new Random();
+        int batecsMinut = 0;
         float totalBatecs = 0;
         int min=1;
         for (;min<=5;){
-            System.out.println("Introdueix pulsacions minut "+min+":");
-            batecsMinut = lector.nextFloat();
-            if (batecsMinut >= 30 && batecsMinut <= 150 ){
-                totalBatecs += batecsMinut;    
-                min ++;
-                System.out.println(totalBatecs + " " + min);
-            } else {
-                System.out.println("Introdueix un valor valid (entre 30 i 150)");
-            }
-                 
+            batecsMinut = aleatori.nextInt(30,151);
+            System.out.println("Pulsacions minut "+min+": " + batecsMinut);
+            totalBatecs += batecsMinut;    
+            min ++;
         }
         System.out.println("Mitjana = "+ (totalBatecs/(min-1)));
         
         }
         
     }
-    
 
