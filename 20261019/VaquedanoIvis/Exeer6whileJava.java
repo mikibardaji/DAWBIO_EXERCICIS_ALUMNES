@@ -15,6 +15,28 @@ public class Exeer6whileJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+boolean negativo = false;
+int i = 1;
+
+while (i <= 10) {
+    System.out.print("Introdueix el valor " + i + ": ");
+    double valor = sc.nextDouble();
+
+    if (valor < 0) {
+        negativo = true;
+    }
+
+    i++;
+}
+
+if (negativo) {
+    System.out.println("S'ha detectat algun valor crític.");
+} else {
+    System.out.println("No s'han detectat valors crítics.");
+}
+        
     }
     
 }
