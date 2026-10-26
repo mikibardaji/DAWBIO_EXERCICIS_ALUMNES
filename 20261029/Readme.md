@@ -1,8 +1,13 @@
 # Realitzar els dos exercicis següents
 
-15. Programa que mostra totes les taules de multiplicar entre 1 i 9.
+14. Realizar este ejercicio adivinar numero
+    
+16. Programa que mostra totes les taules de multiplicar entre 1 i 9.
 
-16. El programa permet anar introduint temperatures corporals de diferents pacients (valors reals).
+EL EJERCICIO 17 NO HACE FALTA PARA CASA
+
+
+17. El programa permet anar introduint temperatures corporals de diferents pacients (valors reals).
     Anirà demanant temperatures fins que fiquis -1 que voldrà dir acabar.
     Quan l’usuari decideixi finalitzar, el programa mostrarà:
     * La temperatura màxima registrada (durant les voltes haure d'anar guardant la maxima, i si la superen canviarla)
