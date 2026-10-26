@@ -15,6 +15,15 @@ public class Exer4whileeJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc =new scanner(System.in);
+         System.out.println("Introduce N");
+        int n = sc.nextInt();
+
+        int i =1;
+        while(i <=n){
+            if (i % 2 == 0) {
+                Sytem.out.println(i);
+        
     }
     
 }
