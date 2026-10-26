@@ -15,6 +15,23 @@ public class Exer9forJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
     }
-    
+    Scanner sc = new Scanner(System.in);
+
+int suma = 0;
+int i = 1;
+
+while (i <= 5) {
+    System.out.print("Introdueix pulsacions minut " + i + ": ");
+    int pulsaciones = sc.nextInt();
+
+    suma = suma + pulsaciones;
+
+    i++;
+}
+
+double media = suma / 5.0;
+
+System.out.println("Mitjana = " + media + " bpm");
 }
