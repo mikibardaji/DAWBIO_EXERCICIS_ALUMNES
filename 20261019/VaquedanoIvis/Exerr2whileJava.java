@@ -19,8 +19,11 @@ public class Exerr2whileJava {
          Scanner sc =new Scanner(System.in);
         System.out.println("Quantes dosis necessites? ");
         int dosis = sc.nextInt();
-         for (int queden =dosis - 1; queden>= 0; queden--){
+        int queden = dosis -1;
+        while (queden >=0){
+       
              System.out.println("Dosis administrada te'n falten " + queden + "....");
+            queden--;
              
              System.out.println("Ja aetsas curat!!!");
      
