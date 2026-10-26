@@ -15,6 +15,14 @@ public class Exer5forJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         Scanner sc =new Scanner(System.in);
+           System.out.println("Preparant quirofan....");
+
+        for(int i = 10, i >= 1; i--){
+               System.out.println("i");
+               System.out.println(" Inici de la intervencion
+                                  ");
+       
     }
     
 }
