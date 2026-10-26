@@ -15,6 +15,23 @@ public class Exerr7whileJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+int negativos = 0;
+int i = 1;
+
+while (i <= 10) {
+    System.out.print("Introdueix el valor " + i + ": ");
+    double valor = sc.nextDouble();
+
+    if (valor < 0) {
+        negativos++;
+    }
+
+    i++;
+}
+
+System.out.println("Nombre de valors negatius: " + negativos);
     }
     
 }
