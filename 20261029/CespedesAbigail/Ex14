@@ -1,0 +1,55 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex14;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author abiga
+ */
+public class Ex14 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        Scanner teclat = new Scanner(System.in);
+
+        int minim = 1;
+        int maxim = 100;
+        int intent;
+        int resposta;
+
+        System.out.println("Pensa un numero entre 1 i 100");
+
+        do {
+
+            intent = (minim + maxim) / 2;
+
+            System.out.println("El numero es " + intent + "?");
+            System.out.println("1 = major");
+            System.out.println("2 = menor");
+            System.out.println("3 = igual");
+
+            resposta = teclat.nextInt();
+
+            if (resposta == 1) {
+                minim = intent + 1;
+            }
+
+            if (resposta == 2) {
+                maxim = intent - 1;
+            }
+
+        } while (resposta != 3);
+
+        System.out.println("He endevinat el numero!");
+
+    }
+
+}
+
