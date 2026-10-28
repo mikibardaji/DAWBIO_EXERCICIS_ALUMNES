@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex15;
+
+/**
+ *
+ * @author abiga
+ */
+public class Ex15 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        int taula;
+        int numero;
+
+        for (taula = 1; taula <= 9; taula++) {
+
+            System.out.println("Taula del " + taula);
+
+            for (numero = 1; numero <= 10; numero++) {
+
+                System.out.println(taula + " x " + numero + " = " + (taula * numero));
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+}
