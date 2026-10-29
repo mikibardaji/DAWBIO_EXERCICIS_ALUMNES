@@ -41,7 +41,7 @@ public class CajaRegister {
                 DineroAñadir = Double.parseDouble(DineroInPut);
             } catch (NumberFormatException e) {
                 System.err.println("Error de formato. Operación cancelada por seguridad.");   
-                System.out.println("Total Acumulado: " + cajaregistradora)
+                System.out.println("Total Acumulado: " + cajaregistradora);
                 break;
             }
 
