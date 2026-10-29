@@ -33,13 +33,15 @@ public class TercerAño {
             String DineroInPut = sc.nextLine();
             if (DineroInPut == null || DineroInPut.isEmpty()) {
                 System.err.println("Error: No se ha introducido ningun valor");
+                System.out.println("Total Acumulado: " + cajaregistradora);
                 break;
             }
 
             try {
                 DineroAñadir = Double.parseDouble(DineroInPut);
             } catch (NumberFormatException e) {
-                System.err.println("Error de formato. Operación cancelada por seguridad.");       
+                System.err.println("Error de formato. Operación cancelada por seguridad.");   
+                System.out.println("Total Acumulado: " + cajaregistradora)
                 break;
             }
 
