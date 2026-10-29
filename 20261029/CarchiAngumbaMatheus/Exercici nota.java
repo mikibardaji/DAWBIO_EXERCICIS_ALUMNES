@@ -16,15 +16,17 @@ public class Exceptions {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner lector = new Scanner(System.in);
-        String nota;
+        String notaString;
+        int nota;
         do {
             System.out.print("Introdueix la nota del examen: ");
-            nota = lector.nextLine();
-            if (Integer.parseInt(nota) >10 || Integer.parseInt(nota)<0) {
+            notaString = lector.nextLine();
+            nota = Integer.parseInt(notaString);
+            if (nota >10 || nota<0) {
                 System.out.println("");
                 System.out.println("Valor incorrecte. La nota ha d'estar entre 0 i 10.");
             }
-        } while (Integer.parseInt(nota) >10 || Integer.parseInt(nota)<0);
+        } while (nota >10 || nota<0);
         System.out.println("");
         System.out.println("Nota registrada correctament: "+ nota);                            
     }
