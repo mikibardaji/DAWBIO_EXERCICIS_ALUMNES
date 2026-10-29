@@ -56,7 +56,9 @@ public class Bucles {
                         break;
                 }
             }
-            System.out.println("Entesos, pensant en un numero entre " + limitInferior+ " - "+ (limitSuperior-1) );
+            if (veredicte!='=') {
+                System.out.println("Entesos, pensant en un numero entre " + limitInferior+ " - "+ (limitSuperior-1) );
+            }
             if (limitInferior==limitSuperior || limitInferior>=100 || limitSuperior<=1){
                 if (mentida>1) {
                     System.out.println("No pot ser... En algo m'estás mentint");
@@ -66,6 +68,11 @@ public class Bucles {
             charIncorrecte = true;
         } while (veredicte != '=');
         System.out.println("He encertat!! El teu número era: "+numMaquina );
-        System.out.println("He trigat " +intents+ " intents válids.");
+        if (intents==1) {
+            System.out.println("Només m'ha pres un intent :O");
+        } else {
+            System.out.println("He trigat " +intents+ " intents válids.");
+        }
+        
     }
 }
