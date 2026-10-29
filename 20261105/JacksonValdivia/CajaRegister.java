@@ -39,8 +39,7 @@ public class TercerAño {
             try {
                 DineroAñadir = Double.parseDouble(DineroInPut);
             } catch (NumberFormatException e) {
-                System.err.println("Error de formato. Operación cancelada por seguridad.");
-                DineroAñadir = 0;
+                System.err.println("Error de formato. Operación cancelada por seguridad.");       
                 break;
             }
 
