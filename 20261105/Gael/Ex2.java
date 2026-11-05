@@ -15,8 +15,8 @@ public class Ex2 {
      */
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
-        String dinersEscrits;    
-        double  suma, dinersAcomulats = 0;
+        String dinersUsuari;    
+        double  suma, dinersQueTinc = 0;
         boolean salir = false;
         
         System.out.println("Caixa registradora:");
@@ -27,8 +27,8 @@ public class Ex2 {
             do{
             System.out.print("Introdueix el preu del producte: ");
             dinersEscrits = lector.nextLine();
-            suma = Double.parseDouble(dinersEscrits);
-            dinersAcomulats = dinersAcomulats + suma;
+            suma = Double.parseDouble(dinersUsuari);
+            dinersQueTinc = dinersQueTinc + suma;
             
             if (suma == 0){
                 salir = true;                
@@ -38,7 +38,7 @@ public class Ex2 {
         }catch(NumberFormatException e){
             System.out.println("Error de format. Operació cancel·lada per seguretat.");
         }
-        System.out.println("Preu total: " + dinersAcomulats + " €.");
+        System.out.println("Preu total: " + dinersQueTinc + " €.");
     }
     
 }
