@@ -1,0 +1,47 @@
+El programa ha de complir els següents requisits:
+Ús d'un bucle: El programa demanar nota fins que  l'usuari introdueixi un valor vàlid.
+Captura d'excepcions: Si l'usuari introdueix un text que no es pot convertir a un nombre sencer (ex.,  "excel·lent" o "vuit"), el programa ha de capturar l'excepció NumberFormatException (o InputMismatchException), mostrar un missatge d'error per pantalla ("Error: Has d'introduir un nombre sencer.") i tornar a demanar la nota.
+Validació del rang: Si l'usuari introdueix un nombre fora del rang (el programa ha de mostrar ("La nota ha d'estar entre 0 i 10.") i continuar demanant-la.
+Finalització: Quan la nota sigui un nombre sencer correcte i estigui dins del rang, el bucle acaba i surt : "Nota registrada correctament: [nota].
+
+
+import java.util.Scanner;
+
+public class ValidadorNotas {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+        boolean notaValida = false;
+
+        while (!notaValida) {
+            System.out.print("Introduce la nota del examen (0 a 10): ");
+            String entrada = teclado.nextLine();
+
+            try {
+                int nota = Integer.parseInt(entrada);
+
+                if (nota >= 0 && nota <= 10) {
+                    System.out.println(
+                        "Nota registrada correctamente: " + nota
+                    );
+                    notaValida = true;
+                } else {
+                    System.out.println(
+                        "La nota debe estar entre 0 y 10."
+                    );
+                }
+
+            } catch (NumberFormatException error) {
+                System.out.println(
+                    "Error: Debes introducir un número."
+                );
+            }
+        }
+
+        teclado.close();
+    }
+
+
+    
+}
