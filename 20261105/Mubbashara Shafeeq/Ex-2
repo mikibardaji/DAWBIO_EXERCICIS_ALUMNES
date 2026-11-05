@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex2;
+import java.util.Scanner;
+/**
+ *
+ * @author msh6189
+ */
+public class Ex2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double preu, preuAcum=0;
+        String preuString;
+        
+        do
+        {
+            System.out.println("--- CAIXA REGISTRADORA ---");
+             preuString = sc.nextLine()
+             preu = Double.oarseDouble(preuString);
+             preuAcum = preuAcum + preu;
+            System.out.println("Introdueix els preus dels productes. Introdueix '0' per finalitzar.");
+        }catch(NumberFormatException ex)
+                {
+                 System.out.println("error de format");
+                preu = 0;
+                // break;
+                }
+        
+    } while (preu!=0);
+}catch(NumberFormatException ex)
+{
+System.out.println("error de format");
+       
+}    
+
