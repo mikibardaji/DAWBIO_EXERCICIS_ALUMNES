@@ -1,55 +1,52 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package exerexcep;
+
+package cajaregistradora;
 
 import java.util.Scanner;
 
 /**
  *
- * @author iviss
+ * @author iva7943
  */
-public class ExerExcep {
+public class CajaRegistradora {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc =new Scanner(System.in);
+        double precio, precioAcum, valor, total =0;
+        String precioString;
         
-
-        Scanner teclado = new Scanner(System.in);
-
-        double precio;
-        double total = 0;
-        boolean continuar = true;
-
-        while (continuar) {
+        System.out.println("Introduce los precios de los productos: ");
+        precioString = sc.nextLine();
+        
+        do {
+            System.out.println("Introduce el precio del producto (0 para terminar):");
+            precioString = sc.nextLine();
 
             try {
-                System.out.println("Introduce el precio del producto (0 para terminar):");
-                String entrada = teclado.nextLine();
+                
+             valor= Double.parseDouble(precioString);
 
-                precio = Double.parseDouble(entrada);
-
-                if (precio == 0) {
-                    continuar = false;
-                } else {
-                    total = total + precio;
+                if (valor != 0) {
+                    total += valor;
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println("Error de formato. Operación cancelada por seguridad.");
-                continuar = false;
+                System.out.println("Error de formato, Operación cancelada por seguridad.");
+                precioString = "0"; 
             }
-        }
+
+        } while (!precioString.equals("0"));
 
         System.out.println("Total de la compra: " + total + " €");
-
-        teclado.close();
+            
+        }
+        
     }
-}
+    
+
 
     
     
