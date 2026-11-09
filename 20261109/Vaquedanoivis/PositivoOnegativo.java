@@ -1,5 +1,5 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to edit this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package positivoonegativo;
@@ -20,31 +20,39 @@ public class PositivoOnegativo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner sc= new Scanner(System.in);
-        int num;
-        System.out.println("Dime un numero entero: ");
-        num = sc.nextInt();
+       
+        int num = pedirNumero("Dime un numero entero: ");
         
-    int resultado = obteSigne(int num);
-    
-    if(resultado == 1){
-        System.out.println("Es positivo");
-        
+        int resultado = obteSigne(num);
+        mostrarResultado(resultado);
     }
-    else if (resultado == -1)
+
+   
+    public static int pedirNumero(String frase) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(frase);
+        return sc.nextInt();
+    }
+
+
+    public static void mostrarResultado(int resultado) {
+        if (resultado == 1) {
+            System.out.println("Es positivo");
+        } else if (resultado == -1) {
             System.out.println("Es negativo");
+        } else {
+            System.out.println("Es cero");
+        }
     }
-        
-    }
+
 
     public static int obteSigne(int num) {
         if (num > 0) {
             return 1;
-        }else if (num < 0) {
+        } else if (num < 0) {
             return -1;
-        }else{
-    return 0;
-   
+        } else {
+            return 0;
+        }
     }
- }
+}
