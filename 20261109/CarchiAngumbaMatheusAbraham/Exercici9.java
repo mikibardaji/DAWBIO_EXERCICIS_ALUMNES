@@ -15,11 +15,11 @@ public class Funcio2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Digues un número: ");
+        System.out.print("Digues un número: ");
         int num1 = preguntarNum();
-        System.out.println("Ara digues un altre: ");
+        System.out.print("Ara digues un altre: ");
         int num2 = preguntarNum();
-        System.out.println("I ara digues un altre: ");
+        System.out.print("I ara digues un altre: ");
         int num3 = preguntarNum();
         int gran = major(num1,num3);
         gran = major(gran,num2);
