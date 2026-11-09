@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class Ejer4Fu {
 
-    /**
+      /**
      * 4. Programa que pide al usuario un número entero 
      * y muestra si es positivo, cero o negativo. Es necesario 
      * crear el método int obteSigne(int x), el cual devuelve -1, 0, +1 según 
@@ -29,6 +29,14 @@ public class Ejer4Fu {
         }else{
             System.out.println("El numero es positvo");
         }
+        
+        //comprobamos si es par 
+        boolean par = esPar(num);
+        if (par == true){
+            System.out.println("El numero es par");
+        }else{
+            System.out.println("El numero es impar");
+        }
 
     
     }
@@ -42,5 +50,15 @@ public class Ejer4Fu {
             return 1; // si es positivo devuelve 1
         }
     }
+   
+    //comprueba si es par 
+    public static boolean esPar(int num){
+        if (num % 2 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     
 }
+
