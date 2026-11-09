@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package funcionsii;
+
+/**
+ *
+ * @author msh6189
+ */
+/**
+     *Programa que demana a l’usuari una distància mesurada en milles i mostra el seu equivalent en quilòmetres (1 milla = 1,6093 km). Ha d’implementar un mètode amb el prototip double millesAKm(int milles).
+     */ 
+public class EX5 {
+public static double milesAkm(int milles) {
+    return milles * 1,6093;
+}
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Introdueix una distància en miles");
+    int milles = sc.nextInt();
+    
+    double km = millesAkm(milles);
+    
+    System.out.println("La distància en quilòmetres és: " + km);  
+}
+}
