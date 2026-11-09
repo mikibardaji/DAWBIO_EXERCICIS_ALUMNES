@@ -29,7 +29,7 @@ public class Nummenor {
         num2 = sc.nextInt();
          int resultado = menor(num1, num2);
          
-         System.out.println("El numero menor es: " + menor(num2, num2));
+         System.out.println("El numero menor es: " + menor(num1, num2));
 
     }
 
