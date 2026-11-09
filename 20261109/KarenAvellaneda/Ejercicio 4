@@ -1,0 +1,62 @@
+ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.ejercicio4;
+import java.util.Scanner;
+/**
+ *
+ * @author kav4778
+ */
+public class Ejercicio4 {
+    public static int obteSigne (int x){
+        //el resultado tiene que ser un numero entero y x quiere decir que recibe un numero entero
+        if (x<0){
+            // el numero es menor que cero
+            return -1;
+            //devolvera el valor -1 y termina de ejecutar
+            
+        }
+        else if (x ==0 ){
+            //sino cumpliera la condicion, seguira probando otra
+            // x==0 el numero es igual a cero
+           
+          return 0;
+          // devuuelve cero
+        }
+        else {
+            //seguimos bucando otro caso
+            //si el  numero no es negativo o cero, tendria que ser positivo
+            return 1;
+        }
+    }
+    
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        //leeremos datos 
+        System.out.print("Introduce un numero:");
+        //introducimos un numero 
+        int numero =sc.nextInt();
+        // int mostramos la variable 
+        int resultado = obteSigne(numero);
+        //comprobamos el resultado 
+        
+        
+        
+        
+        if (resultado == -1) {
+            System.out.println("Es negativo");
+            //si el resultado vale -1 es negativo
+        }  else if (resultado == 0){
+         System.out.println("Es cero");
+                    //si vale 0 
+        }          else {
+        System.out.println("Es positivo");
+                    //si vale positivo
+                    
+                
+                    }
+         
+        }
+            
+    }
