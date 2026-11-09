@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package modularex3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author eal0493
+ */
+public class Modularex3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+  Scanner sc = new Scanner(System.in);
+
+        System.out.println("Introdueix el primer número:");
+        int num1 = sc.nextInt();
+
+        System.out.println("Introdueix el segon número:");
+        int num2 = sc.nextInt();
+
+        int resultado = menor(num1, num2);
+
+        System.out.println("El número menor es: " + resultado);
+
+        sc.close();
+    }
+
+    public static int menor(int x, int y) {
+
+        if (x < y) {
+            return x;
+        } else {
+            return y;
+        }        
+    }
+    
+}
