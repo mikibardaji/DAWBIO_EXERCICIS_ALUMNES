@@ -14,11 +14,16 @@ public class PositiuNegatiuZero {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        try{
         Scanner lector = new Scanner(System.in);
         int x;
         System.out.println("Diguem un número: ");
         x=lector.nextInt();
         signe(x);
+       }
+       catch(InputMismatchException ex){
+           System.out.println("error");
+       }
     }
     
     public static int signe(int x){
