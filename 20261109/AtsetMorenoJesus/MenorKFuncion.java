@@ -7,7 +7,7 @@ package menorkfuncion;
 import java.util.Scanner;
 
 /**
- *
+ *hola
  * @author jat0264
  */
 public class MenorKFuncion {
