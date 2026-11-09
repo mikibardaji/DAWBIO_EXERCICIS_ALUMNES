@@ -1,0 +1,59 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex3;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author abiga
+ */
+public class Ex3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        Scanner lector = new Scanner(System.in);
+        boolean correcto = false;
+
+        while (correcto == false) {
+
+            try {
+
+                int x, y;
+
+                System.out.println("Escull el primer numero:");
+                x = lector.nextInt();
+
+                System.out.println("Escull el segon numero:");
+                y = lector.nextInt();
+
+                menor(x, y);
+                correcto = true;
+
+            } catch (InputMismatchException ex) {
+
+                System.out.println("No valid");
+                lector.next();
+            }
+
+        }
+
+    }
+
+    public static void menor(int x, int y) {
+
+        if (x < y) {
+            System.out.println("Es mes petit " + x);
+        } else {
+            System.out.println("Es mes petit " + y);
+        }
+
+    }
+
+}
