@@ -18,13 +18,13 @@ import java.util.Scanner;
 public class Ex5 {
 
     public static void main(String[] args) {
-        
+
         double resultado;
         int dato;
         dato = pedirDato();
         resultado = millesAKm(dato);
         mostrarResultado(resultado);
-        
+
     }
 
     public static int pedirDato() {
@@ -36,14 +36,13 @@ public class Ex5 {
 
         return millas;
     }
-    
-    public static double millesAKm(int milles){
+
+    public static double millesAKm(int milles) {
         return milles * 1.6093;
     }
-    
-        public static void mostrarResultado(double km) {
+
+    public static void mostrarResultado(double km) {
 
         System.out.println("La distancia en kilómetros es: " + km);
     }
 }
-
