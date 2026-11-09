@@ -33,11 +33,11 @@ public class Nummenor {
 
     }
 
-    public static int menor(int x, int y) {
-        if (x < y) {
-            return x;
+    public static int menor(int num1, int num2) {
+        if (num1 < num2) {
+            return num1;
         } else {
-            return y;
+            return num2;
 
         }
 
