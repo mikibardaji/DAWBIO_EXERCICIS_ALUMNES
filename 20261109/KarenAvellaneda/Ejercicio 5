@@ -1,0 +1,34 @@
+package com.mycompany.mavenproject5;
+import java.util.Scanner;
+/**
+ *
+ * @author kav4778
+ */
+public class Mavenproject5 {
+    // 1 milla = 1,6093 km
+    public static double millasAKm (int millas){
+        //usamos double porque queremos decimales y int porque queremos un entero
+        double km = millas * 1.6093;
+     //  usamos multiplicacion de cantidad de millas recibidas
+     return km;
+     // devolvera el resultado
+    }
+    //cierro millaskm
+   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        //creamos  y nombramos entrada
+        
+        System.out.print("coloco las millas:");
+        //mensaje para mostrar
+        int millas = sc.nextInt();
+        //indica que numero sera entero y leera un numero entero
+        double resultado = millasAKm (millas);
+        //calcular , tiene que darnos kilometros y guardar valor
+        System.out.println("Kilometros:" + resultado);
+        //se unira el texto con el valor de la variable
+        
+        
+        
+    }
+}
