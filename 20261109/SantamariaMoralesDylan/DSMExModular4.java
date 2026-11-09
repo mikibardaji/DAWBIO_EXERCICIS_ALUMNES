@@ -19,11 +19,9 @@ public class DSMExModular4 {
     public static void main(String[] args) {
         // 4. Programa que demana a l’usuari un nombre enter i mostra si és positiu, zero o negatiu. 
         // Cal crear el mètode int obteSigne(int x), el qual retorna -1, 0, +1 segons el nombre és negatiu, zero o positiu, respectivament.
-        Scanner lector = new Scanner(System.in);
-        
+                
         try{
-            System.out.print("Introdueix un numero i et dire que es: ");
-            int x = lector.nextInt();
+            int x = numero();
             
             int signe = obteSigne(x);
             
@@ -42,10 +40,17 @@ public class DSMExModular4 {
         }
     }
     
+    public static int numero(){
+        Scanner lector = new Scanner(System.in);
+        System.out.print("Introdueix un numero i et dire que es: ");
+        int x = lector.nextInt();
+        return x;
+    }
+    
     public static int obteSigne(int x){
         int signe;
         if (x < 0){
-            signe = -1;
+            signe = -1; //Podria haber hecho return 1;
         }
         else if(x==0){
             signe = 0;            
