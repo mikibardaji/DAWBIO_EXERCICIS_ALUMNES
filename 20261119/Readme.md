@@ -27,18 +27,24 @@ Per a cada figura es calcularà el perímetre i l’àrea. Cal fer funcions per:
 Escull una opció: 1
 
 --- CÀLCULS AMB RECTANGLES ---
+
 Introdueix la base del rectangle: 5
+
 Introdueix l'altura del rectangle: 3.5
+
 Perímetre del rectangle: 17,00
+
 Àrea del rectangle: 17,50
+
 
 ====== MENÚ PRINCIPAL ======
 0. Sortir
 1. Càlculs amb rectangles
 2. Càlculs amb triangles
+3. 
 Escull una opció: 0
-Fins aviat! Sortint del programa...
 
+Fins aviat! Sortint del programa...
 
 
 ====== MENÚ PRINCIPAL ======
@@ -46,7 +52,9 @@ Fins aviat! Sortint del programa...
 1. Càlculs amb rectangles
 2. Càlculs amb triangles
 Escull una opció: 5
+
 Error: Opció no vàlida. Torna-ho a intentar.
+
 
 ====== MENÚ PRINCIPAL ======
 0. Sortir
@@ -56,8 +64,11 @@ Escull una opció: 2
 
 --- CÀLCULS AMB TRIANGLES ---
 Introdueix la base del triangle: -4
+ 
 Error: El número ha de ser estrictament positiu (major que 0).
+
 Introdueix la base del triangle: 0
+
 Error: El número ha de ser estrictament positiu (major que 0).
 Introdueix la base del triangle: 6
 Introdueix l'altura del triangle: 4
@@ -73,9 +84,3 @@ Perímetre del triangle: 16,00
 Escull una opció: 0
 Fins aviat! Sortint del programa...
 
-====== MENÚ PRINCIPAL ======
-0. Sortir
-1. Càlculs amb rectangles
-2. Càlculs amb triangles
-Escull una opció: 0
-Fins aviat! Sortint del programa...
