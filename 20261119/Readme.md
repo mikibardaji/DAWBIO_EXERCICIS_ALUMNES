@@ -1,4 +1,4 @@
-# Exercici 19 del full de problemes.
+# Exercici 19 del full de problemes del campus.
 
 Programa amb un menú de tres opcions:
        0. Sortir. 
