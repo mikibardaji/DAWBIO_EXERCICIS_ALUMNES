@@ -54,31 +54,32 @@ public class ProgramesJoc {
         }
         return 2;
     }
-        public static void impJugada(String quienJuega, int choose){
+
+    public static void impJugada(String quienJuega, int choose) {
         String jugada;
-        
-        if (choose == 0){
+
+        if (choose == 0) {
             jugada = "Piedra";
-        } else if(choose == 1){
+        } else if (choose == 1) {
             jugada = "Papel";
-        }else{
+        } else {
             jugada = "Tijera";
         }
-        System.out.println(quienJuega+" ha usado "+jugada);
+        System.out.println(quienJuega + " ha usado " + jugada);
     }
-    
-    public static boolean seguirJugando(int pointPlayer1, int pointPlayer2){
-        if(ointPlayer1<3 && pointPlayer2 < 3){
+
+    public static boolean seguirJugando(int pointPlayer1, int pointPlayer2) {
+        if (ointPlayer1 < 3 && pointPlayer2 < 3) {
             return true;
-        } else{
+        } else {
             return false;
         }
     }
-         public static void marcador(int pointPlayer1, int pointPlayer2) {
+
+    public static void marcador(int pointPlayer1, int pointPlayer2) {
         System.out.println("Marcador:");
         System.out.println("Jugador 1: " + pointPlayer1 + " puntos");
         System.out.println("Jugador 2: " + pointPlayer2 + " puntos");
-         }
-
+    }
 
 }
