@@ -46,7 +46,7 @@ public class ProgramesJoc {
                 System.out.println("Jugamos otra vez");
             }
         } while (seguirJugando(puntuacionOrdenador, puntuacionUsuario));
-        System.out.println("Se acabo, hemos quedado: ");
+        System.out.println("Se acabó");
         marcador(puntuacionUsuario, puntuacionOrdenador);
     }
 
@@ -131,3 +131,4 @@ public class ProgramesJoc {
         return score + 1;
     }
 }
+
