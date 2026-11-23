@@ -3,12 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package programes.joc;
+
 import java.util.Scanner
-import java.util.Random
-/**
- *
- * @author mca3765
- */
+import java.util.Random /**
+         *
+         * @author mca3765
+         */
+
 public class ProgramesJoc {
 
     /**
@@ -17,7 +18,6 @@ public class ProgramesJoc {
     public static void main(String[] args) {
         // TODO code application logic here
     }
-
 
     public static int jugada() {
         Scanner lector = new Scanner(System.in);
@@ -43,19 +43,16 @@ public class ProgramesJoc {
         return resposta;
     }
 
-        public static int ganador(int choose_player1,int choose_player2) {
+    public static int ganador(int choose_player1, int choose_player2) {
         // 0 empate | 1 gana usuario | 2 gana ordenador
         if (choose_player1 == choose_player2) {
             return 0;
-        }
-        else if ((choose_player1 ==0 && choose_player2==2) ||
-                (choose_player1 ==1 && choose_player2==0) ||
-                (choose_player1 ==2 && choose_player2==1)) {
+        } else if ((choose_player1 == 0 && choose_player2 == 2)
+                || (choose_player1 == 1 && choose_player2 == 0)
+                || (choose_player1 == 2 && choose_player2 == 1)) {
             return 1;
         }
         return 2;
     }
-    
-    
-    
+
 }
