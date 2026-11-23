@@ -82,4 +82,21 @@ public class ProgramesJoc {
         System.out.println("Jugador 2: " + pointPlayer2 + " puntos");
     }
 
+    public static int gestionarTirada(int ganador, int score) {
+        Random rand = new Random();
+        int jugadaOrdenador = rand.nextInt(3); // Genera 0, 1 o 2 (inclosos)
+        System.out.println("Jugada de l'ordinador: " + jugadaOrdenador);
+
+        if (ganador == 0) {
+            System.out.println("hay empate");
+        } else if (ganador == 1) {
+            System.out.println("has ganado");
+        } else if (ganador == 2) {
+            System.out.println("ha ganado el ordenador");
+        }
+
+        return score + 1;
+    }
+
+        
 }
