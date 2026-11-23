@@ -74,6 +74,11 @@ public class ProgramesJoc {
             return false;
         }
     }
+         public static void marcador(int pointPlayer1, int pointPlayer2) {
+        System.out.println("Marcador:");
+        System.out.println("Jugador 1: " + pointPlayer1 + " puntos");
+        System.out.println("Jugador 2: " + pointPlayer2 + " puntos");
+         }
 
 
 }
