@@ -4,8 +4,10 @@
  */
 package programes.joc;
 
-import java.util.Scanner
-import java.util.Random /**
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.util.Random;
+  /**
          *
          * @author mca3765
          */
@@ -69,7 +71,7 @@ public class ProgramesJoc {
     }
 
     public static boolean seguirJugando(int pointPlayer1, int pointPlayer2) {
-        if (ointPlayer1 < 3 && pointPlayer2 < 3) {
+        if (pointPlayer1 < 3 && pointPlayer2 < 3) {
             return true;
         } else {
             return false;
