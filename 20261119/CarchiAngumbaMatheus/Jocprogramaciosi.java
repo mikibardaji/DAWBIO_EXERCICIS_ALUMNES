@@ -108,11 +108,11 @@ public class ProgramesJoc {
             return false;
         }
     }
-
+//
     public static void marcador(int pointPlayer1, int pointPlayer2) {
         System.out.println("Marcador:");
-        System.out.println("Jugador 1: " + pointPlayer1 + " puntos");
-        System.out.println("Jugador 2: " + pointPlayer2 + " puntos");
+        System.out.println("Usuario: " + pointPlayer1 + " puntos");
+        System.out.println("Ordenador: " + pointPlayer2 + " puntos");
     }
 
     public static int gestionarTirada(int ganador, int score) {
@@ -131,4 +131,3 @@ public class ProgramesJoc {
         return score + 1;
     }
 }
-
