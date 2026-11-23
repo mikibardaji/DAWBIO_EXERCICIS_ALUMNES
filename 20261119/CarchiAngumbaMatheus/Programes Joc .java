@@ -67,8 +67,8 @@ public class ProgramesJoc {
         System.out.println(quienJuega+" ha usado "+jugada);
     }
     
-    public static boolean seguirJugando(int puntosJ1, int puntosJ2){
-        if(puntosJ1 <3 && puntosJ2 < 3){
+    public static boolean seguirJugando(int pointPlayer1, int pointPlayer2){
+        if(ointPlayer1<3 && pointPlayer2 < 3){
             return true;
         } else{
             return false;
