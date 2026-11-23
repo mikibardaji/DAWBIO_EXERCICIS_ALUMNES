@@ -54,5 +54,26 @@ public class ProgramesJoc {
         }
         return 2;
     }
+        public static void impJugada(String quienJuega, int choose){
+        String jugada;
+        
+        if (choose == 0){
+            jugada = "Piedra";
+        } else if(choose == 1){
+            jugada = "Papel";
+        }else{
+            jugada = "Tijera";
+        }
+        System.out.println(quienJuega+" ha usado "+jugada);
+    }
+    
+    public static boolean seguirJugando(int puntosJ1, int puntosJ2){
+        if(puntosJ1 <3 && puntosJ2 < 3){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
 
 }
