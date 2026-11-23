@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package programes.joc;
-
+import java.util.Scanner
+import java.util.Random
 /**
  *
  * @author mca3765
