@@ -25,25 +25,29 @@ public class ProgramesJoc {
         int puntuacionOrdenador = 0;
         int puntuacionUsuario = 0;
         int puntuacionNula = 0;
+        int ganadorA;
         do {
             jugadaOrdenador = aleatori.nextInt(0, 3);
             jugadaUsuario = jugada();
             impJugada("Jugador 1", jugadaUsuario);
             impJugada("Jugador 2", jugadaOrdenador);
-            if (ganador(jugadaUsuario, jugadaOrdenador) == 1) {
-                puntuacionUsuario = gestionarTirada(ganador(jugadaUsuario, jugadaOrdenador), puntuacionUsuario);
-
-            } else if ((ganador(jugadaUsuario, jugadaOrdenador)) == 2) {
-                puntuacionOrdenador = gestionarTirada(ganador(jugadaUsuario, jugadaOrdenador), puntuacionOrdenador);
-
+            ganadorA = ganador(jugadaUsuario, jugadaOrdenador);
+            if (ganadorA ==1) {    
+                gestionarTirada(1, puntuacionUsuario);
+                puntuacionUsuario++;
+            } else if (ganadorA == 2) {
+                gestionarTirada(2, puntuacionOrdenador);
+                puntuacionOrdenador++;
             } else {
                 gestionarTirada(ganador(jugadaUsuario, jugadaOrdenador), puntuacionNula);
             }
-            marcador(jugadaUsuario, jugadaOrdenador);
-            System.out.println("Jugamos otra vez");
+            if(seguirJugando(puntuacionOrdenador, puntuacionUsuario)){
+                marcador(puntuacionUsuario, puntuacionOrdenador);
+                System.out.println("Jugamos otra vez");
+            }
         } while (seguirJugando(puntuacionOrdenador, puntuacionUsuario));
         System.out.println("Se acabo, hemos quedado: ");
-        marcador(jugadaUsuario, jugadaOrdenador);
+        marcador(puntuacionUsuario, puntuacionOrdenador);
     }
 
     public static int jugada() {
@@ -72,6 +76,8 @@ public class ProgramesJoc {
 
     public static int ganador(int choose_player1, int choose_player2) {
         // 0 empate | 1 gana usuario | 2 gana ordenador
+        //final int PIEDRA == 0;
+
         if (choose_player1 == choose_player2) {
             return 0;
         } else if ((choose_player1 == 0 && choose_player2 == 2)
